@@ -1,0 +1,3250 @@
+{
+  "metadata": {
+    "exam_name": "CompTIA Security+ SY0-801 原創練習 第01回",
+    "subject": "CompTIA Security+",
+    "date": "2026-10-06",
+    "exam_code": "SY0-801",
+    "language": "zh-Hant",
+    "question_count": 90,
+    "domain_distribution": {
+      "1": 14,
+      "2": 22,
+      "3": 17,
+      "4": 24,
+      "5": 13
+    },
+    "content_type": "original-practice",
+    "objectives_url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+    "objectives_version": "2.0"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 1,
+      "objective": "1.1",
+      "category": "1. General Security Concepts",
+      "chapter": "1.1",
+      "competency": "control categories and CIA",
+      "question_text": "資料庫必須防止未授權讀取，同時確保交易不可被竄改；這兩項要求分別主要對應 CIA 的哪兩項？",
+      "options": {
+        "A": "機密性與完整性",
+        "B": "可用性與不可否認性",
+        "C": "完整性與可用性",
+        "D": "可用性與機密性"
+      },
+      "answer": "A",
+      "explanation": "機密性限制資料只能由獲授權主體讀取；完整性確保資料未被未授權修改。題目沒有描述服務持續可用或交易簽署，因此 A 同時符合兩個控制目標。",
+      "option_explanations": {
+        "A": "正確，分別對應防止洩漏與防止竄改。",
+        "B": "未提及服務中斷或交易來源證明。",
+        "C": "把可用性錯當成防止竄改的要求。",
+        "D": "完整性要求被遺漏。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 1.1",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 1,
+      "objective": "1.1",
+      "category": "1. General Security Concepts",
+      "chapter": "1.1",
+      "competency": "control types",
+      "question_text": "機房的實體旋轉閘門必須先驗證門禁卡才會開啟。依控制類別及功能，這最符合哪個描述？",
+      "options": {
+        "A": "技術性偵測控制",
+        "B": "實體預防控制",
+        "C": "管理性補償控制",
+        "D": "操作性矯正控制"
+      },
+      "answer": "B",
+      "explanation": "實體閘門在未授權者通過前限制進入，屬於 physical 與 preventive control。",
+      "option_explanations": {
+        "A": "電子驗證有技術元件，但題示的實體進入屏障主要功能是事前預防。",
+        "B": "實體閘門在未授權者通過前限制進入，屬於 physical 與 preventive control。",
+        "C": "沒有指出以政策替代無法部署的控制，不應判為管理性補償。",
+        "D": "閘門限制事前進入，並非事件後的恢復或矯正程序。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 1.1",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 1,
+      "objective": "1.1",
+      "category": "1. General Security Concepts",
+      "chapter": "1.1",
+      "competency": "zero trust and least privilege",
+      "question_text": "實作 Zero Trust 存取架構時，應採取哪兩項措施？（選兩項）",
+      "options": {
+        "A": "每次請求都重新驗證身分與裝置狀態",
+        "B": "依工作需要授予最小權限",
+        "C": "登入一次後永久信任內網來源 IP",
+        "D": "讓所有員工共用部門管理帳號"
+      },
+      "answer": "AB",
+      "explanation": "Zero Trust 假設沒有天然可信的網路位置，要求持續驗證；最小權限則把授權限制在必要範圍，兩者共同降低橫向移動風險。",
+      "option_explanations": {
+        "A": "正確，持續驗證是 Zero Trust 核心。",
+        "B": "正確，最小權限降低過度授權。",
+        "C": "以位置永久信任違反持續驗證。",
+        "D": "共用帳號破壞可追溯性與個別授權。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 1.1",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        },
+        {
+          "url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+          "title": "NIST SP 800-207 — Zero Trust Architecture",
+          "section": "Zero Trust architecture and logical components",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "情境題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 1,
+      "objective": "1.2",
+      "category": "1. General Security Concepts",
+      "chapter": "1.2",
+      "competency": "change management impact analysis",
+      "question_text": "網路團隊想在週末替防火牆加入拒絕規則。CAB 審查時發現該規則會阻斷舊版 ERP 的 API。最適當的下一步是什麼？",
+      "options": {
+        "A": "立即套用規則，事後再通知 ERP 負責人",
+        "B": "移除所有 allow list 以避免相依性",
+        "C": "進行影響分析、測試並準備 backout plan",
+        "D": "跳過維護窗口，改在尖峰時段部署"
+      },
+      "answer": "C",
+      "explanation": "變更會影響既有應用程式相依性，CAB 應先完成利益關係人確認、影響分析與測試，並保留可復原的 backout plan，降低服務中斷。",
+      "option_explanations": {
+        "A": "繞過 CAB 與測試會放大事故。",
+        "B": "移除既有允許規則可能造成其他服務中斷，也可能因預設政策不同改變暴露面；不能取代相依性分析。",
+        "C": "正確，符合變更控制與復原要求。",
+        "D": "尖峰部署增加停機與業務風險。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 1.2",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 1,
+      "objective": "1.2",
+      "category": "1. General Security Concepts",
+      "chapter": "1.2",
+      "competency": "version control and SOP",
+      "question_text": "系統管理員完成核准的 DNS 變更後，哪項文件工作最能維持後續維護的安全性？",
+      "options": {
+        "A": "只在聊天訊息中告知同事",
+        "B": "把變更細節放入個人筆記",
+        "C": "刪除舊版網路圖以節省空間",
+        "D": "更新網路圖、SOP 與版本紀錄"
+      },
+      "answer": "D",
+      "explanation": "網路圖、標準作業程序與版本控制紀錄是可稽核的共同基準；更新它們能讓後續人員知道實際依賴與復原方式，避免配置漂移。",
+      "option_explanations": {
+        "A": "聊天訊息不具正式版本與保存保證。",
+        "B": "個人筆記無法成為團隊標準。",
+        "C": "刪除歷史資料會妨礙稽核與復原。",
+        "D": "正確，三者共同保持可追蹤性。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 1.2",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 1,
+      "objective": "1.3",
+      "category": "1. General Security Concepts",
+      "chapter": "1.3",
+      "competency": "PKI and certificate status",
+      "question_text": "TLS 用戶端驗證伺服器憑證時，哪些機制可協助判斷憑證目前是否仍有效？（選兩項）",
+      "options": {
+        "A": "OCSP 查詢",
+        "B": "只比較伺服器主機名稱",
+        "C": "CRL 檢查",
+        "D": "以 bcrypt 取代 CA 簽章"
+      },
+      "answer": "AC",
+      "explanation": "OCSP 以線上查詢回覆憑證狀態，CRL 則提供已撤銷憑證清單；兩者都能補充有效日期與信任鏈檢查，確認憑證未被撤銷。",
+      "option_explanations": {
+        "A": "正確，OCSP 回傳單張憑證狀態。",
+        "B": "主機名稱只驗證名稱相符。",
+        "C": "正確，CRL 列出被撤銷憑證。",
+        "D": "bcrypt 是密碼雜湊，不是 CA 撤銷機制。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 1.3",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 1,
+      "objective": "1.3",
+      "category": "1. General Security Concepts",
+      "chapter": "1.3",
+      "competency": "symmetric and asymmetric encryption",
+      "question_text": "大量檔案需要以較低計算成本加密，並在傳輸前安全交換工作階段金鑰；最合適的組合是什麼？",
+      "options": {
+        "A": "以對稱加密檔案，再以非對稱方式交換金鑰",
+        "B": "使用 obfuscation 並將金鑰寫入原始碼",
+        "C": "只使用非對稱加密處理全部檔案",
+        "D": "使用雜湊取代加密，再公開雜湊值"
+      },
+      "answer": "A",
+      "explanation": "對稱演算法適合大量資料，速度快且成本低；非對稱演算法可在不預先共享秘密的情況下保護工作階段金鑰，這是混合加密的典型設計。",
+      "option_explanations": {
+        "A": "正確，兼顧效率與金鑰交換安全。",
+        "B": "混淆與硬編碼金鑰都不能取代加密。",
+        "C": "非對稱運算大量資料成本較高。",
+        "D": "雜湊提供完整性，不提供可逆機密性。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 1.3",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        },
+        {
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Security_Terminology_Cheat_Sheet.html",
+          "title": "OWASP — Security Terminology Cheat Sheet",
+          "section": "Cryptography: encryption, hashing and signatures",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "情境題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 1,
+      "objective": "1.3",
+      "category": "1. General Security Concepts",
+      "chapter": "1.3",
+      "competency": "hashing, salting, and signatures",
+      "question_text": "開發團隊要儲存使用者密碼，並需要偵測發布套件是否被竄改。哪一項設計最適合？",
+      "options": {
+        "A": "密碼用可逆 AES；套件只用檔名",
+        "B": "密碼加 salt 後以慢速雜湊儲存；套件以數位簽章驗證",
+        "C": "所有密碼用同一 SHA-1 值；套件用 base64",
+        "D": "把密碼與私鑰放在資料庫明文"
+      },
+      "answer": "B",
+      "explanation": "密碼應以每筆獨有 salt 搭配適合密碼的慢速雜湊，降低彩虹表與重複密碼攻擊；套件數位簽章可驗證來源與完整性，正好符合兩個需求。",
+      "option_explanations": {
+        "A": "可逆密碼保存與檔名都不能提供正確保護。",
+        "B": "正確，分別處理密碼驗證和套件完整性。",
+        "C": "固定雜湊易遭彩虹表，base64 不是安全機制。",
+        "D": "明文密碼與私鑰會直接洩漏。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 1.3",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        },
+        {
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html",
+          "title": "OWASP — Password Storage Cheat Sheet",
+          "section": "Password hashing and salting",
+          "accessed": "2026-10-06"
+        },
+        {
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Security_Terminology_Cheat_Sheet.html",
+          "title": "OWASP — Security Terminology Cheat Sheet",
+          "section": "Cryptography: encryption, hashing and signatures",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 1,
+      "objective": "1.3",
+      "category": "1. General Security Concepts",
+      "chapter": "1.3",
+      "competency": "certificate trust",
+      "question_text": "內部測試網站只供實驗室使用，沒有受信任的外部用戶端；哪種憑證最合理？",
+      "options": {
+        "A": "每個服務都購買 wildcard 公開憑證",
+        "B": "把私鑰寄給所有測試者",
+        "C": "由組織內部 CA 簽發憑證",
+        "D": "使用未加密 HTTP"
+      },
+      "answer": "C",
+      "explanation": "內部 CA 能建立組織可控的 root of trust，適合由管理員配置信任的實驗室用戶端；公開 wildcard 憑證或裸 HTTP 都會增加不必要的風險與成本。",
+      "option_explanations": {
+        "A": "測試環境不需公開信任且 wildcard 擴大影響範圍。",
+        "B": "私鑰不可分發給使用者。",
+        "C": "正確，內部信任鏈可由組織管理。",
+        "D": "未加密 HTTP 無法提供傳輸機密性或伺服器驗證，測試環境仍不應用它承載登入資料。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 1.3",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 1,
+      "objective": "1.1",
+      "category": "1. General Security Concepts",
+      "chapter": "1.1",
+      "competency": "AAA and accounting",
+      "question_text": "稽核人員要求能追溯每次管理員設定變更到特定個人；AAA 中最直接提供這項能力的是哪一項？",
+      "options": {
+        "A": "Authorization",
+        "B": "Availability",
+        "C": "Authentication",
+        "D": "Accounting"
+      },
+      "answer": "D",
+      "explanation": "Authentication 確認是誰，authorization 決定能做什麼；accounting 記錄登入、操作與資源使用，才能把設定變更連結至個別管理員。",
+      "option_explanations": {
+        "A": "只決定權限範圍。",
+        "B": "可用性與追溯個人操作無關。",
+        "C": "只確認身分，未必記錄操作。",
+        "D": "正確，accounting 提供活動追蹤與稽核。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 1.1",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 1,
+      "objective": "1.2",
+      "category": "1. General Security Concepts",
+      "chapter": "1.2",
+      "competency": "change management",
+      "question_text": "變更申請中，哪些資訊最能支援 CAB 判斷安全與營運影響？（選兩項）",
+      "options": {
+        "A": "測試結果與相依服務",
+        "B": "申請人的社群媒體帳號",
+        "C": "未經審查的永久管理權限",
+        "D": "預定維護窗口與停機時間"
+      },
+      "answer": "AD",
+      "explanation": "CAB 需要知道變更是否通過測試、會影響哪些相依服務，以及何時可能造成中斷；維護窗口與停機預估正好支援風險及回復安排。",
+      "option_explanations": {
+        "A": "正確，可證明變更已驗證並揭露相依性。",
+        "B": "與變更風險評估無關，也不能支持 CAB 判斷。",
+        "C": "永久權限本身是風險，不是變更評估證據。",
+        "D": "正確，便於安排利害關係人與降低中斷。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 1.2",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 1,
+      "objective": "1.1",
+      "category": "1. General Security Concepts",
+      "chapter": "1.1",
+      "competency": "compensating controls",
+      "question_text": "舊式工業控制器無法支援 MFA；在汰換前，哪項措施最符合 compensating control？",
+      "options": {
+        "A": "以跳板機、網路隔離及額外監控補足缺口",
+        "B": "停用所有稽核記錄",
+        "C": "接受所有來源的連線",
+        "D": "把控制器帳密貼在機房門上"
+      },
+      "answer": "A",
+      "explanation": "補償控制是在主要控制不可用時提供等效風險降低。跳板機限制路徑、隔離縮小攻擊面、監控增加偵測，能暫時補足控制器不支援 MFA 的缺陷。",
+      "option_explanations": {
+        "A": "正確，提供多層替代保護。",
+        "B": "停用記錄會削弱偵測與追責。",
+        "C": "放寬來源會擴大暴露。",
+        "D": "公開帳密會直接造成未授權存取。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 1.1",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 1,
+      "objective": "1.3",
+      "category": "1. General Security Concepts",
+      "chapter": "1.3",
+      "competency": "encryption levels",
+      "question_text": "筆記型電腦遺失時，組織希望離線攻擊者無法讀取整個作業系統磁碟；應採用哪種加密範圍？",
+      "options": {
+        "A": "只混淆檔案名稱",
+        "B": "全磁碟加密",
+        "C": "單一資料列加密",
+        "D": "檔案加密"
+      },
+      "answer": "B",
+      "explanation": "全磁碟加密會涵蓋作業系統、暫存區與多數使用者資料，在裝置關機或鎖定後能防止直接拆碟讀取；檔案或資料列加密只覆蓋部分內容。",
+      "option_explanations": {
+        "A": "混淆名稱不提供機密性。",
+        "B": "正確，符合保護整個離線磁碟的需求。",
+        "C": "資料列範圍過小，無法保護整個系統。",
+        "D": "未加密的系統與其他檔案仍可暴露。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 1.3",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        },
+        {
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Security_Terminology_Cheat_Sheet.html",
+          "title": "OWASP — Security Terminology Cheat Sheet",
+          "section": "Cryptography: encryption, hashing and signatures",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 1,
+      "objective": "1.2",
+      "category": "1. General Security Concepts",
+      "chapter": "1.2",
+      "competency": "fail forward and rollback",
+      "question_text": "更新後發現非關鍵 UI 問題；回復舊版會重新暴露已知漏洞。CAB 已核准前向修復方案，測試確認修正可行。應採取什麼方式？",
+      "options": {
+        "A": "無視核准方案而立即回復有漏洞的舊版",
+        "B": "只關閉錯誤紀錄而不修復問題",
+        "C": "依核准 fail-forward 計畫部署修正並監控",
+        "D": "讓每位使用者自行修改正式版本"
+      },
+      "answer": "C",
+      "explanation": "Fail-forward 在新狀態上進一步修正，符合已核准及測試可行、避免重新暴露漏洞的情境。",
+      "option_explanations": {
+        "A": "回復仍可能有適用情境，但題示已評估並核准較合適的前向修復。",
+        "B": "關閉記錄只是隱藏訊號，沒有處理 UI 問題及維持可觀測性。",
+        "C": "Fail-forward 在新狀態上進一步修正，符合已核准及測試可行、避免重新暴露漏洞的情境。",
+        "D": "未受控版本會增加漂移，無法一致執行已核准的修復方案。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 1.2",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 2,
+      "objective": "2.1",
+      "category": "2. Threats, Vulnerabilities, and Attacks",
+      "chapter": "2.1",
+      "competency": "CVSS prioritization",
+      "question_text": "漏洞掃描列出 CVSS 9.8 的網際網路暴露服務與 CVSS 6.2 的內部測試主機。一般修補排序最應優先考量哪項？",
+      "options": {
+        "A": "只依 CVSS 基礎分數而排除環境脈絡",
+        "B": "只按硬體採購成本由高到低",
+        "C": "只依發現時間先後而不考慮 exploit",
+        "D": "嚴重度、可被利用性與資產暴露情況"
+      },
+      "answer": "D",
+      "explanation": "CVSS 分數提供一致的嚴重度基準，但實際優先順序還要結合是否可從網路利用、資產重要性與現有緩解措施；不能只按編號或主機名稱決定。",
+      "option_explanations": {
+        "A": "基礎分數描述弱點嚴重性，但仍需考慮利用現況、暴露及本地業務影響。",
+        "B": "設備價格不等於服務的重要性或弱點利用可能性，不能單獨決定優先度。",
+        "C": "發現順序不代表目前風險，排除利用情報可能延後處理正在被利用的弱點。",
+        "D": "正確，結合評分與環境脈絡才可排序。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 2.1",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "type": "情境題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 2,
+      "objective": "2.1",
+      "category": "2. Threats, Vulnerabilities, and Attacks",
+      "chapter": "2.1",
+      "competency": "threat intelligence lifecycle",
+      "question_text": "SOC 收到威脅情報後，已確認某 IP 與組織業務相關，接著將其轉為防火牆規則並通知分析人員。這主要是哪個情報生命週期階段？",
+      "options": {
+        "A": "傳播與使用",
+        "B": "方向設定",
+        "C": "收集",
+        "D": "處理與分析"
+      },
+      "answer": "A",
+      "explanation": "把已分析的情報轉成防禦規則並交付給相關人員，是將情報傳播給決策者或防禦控制使用的階段；單純收集或分析尚未完成實際交付。",
+      "option_explanations": {
+        "A": "正確，已把成果傳遞並應用於控制。",
+        "B": "方向設定是在收集前定義需求。",
+        "C": "收集是取得來源資料。",
+        "D": "處理分析是判斷意義與可信度。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 2.1",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "type": "複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 2,
+      "objective": "2.2",
+      "category": "2. Threats, Vulnerabilities, and Attacks",
+      "chapter": "2.2",
+      "competency": "threat actor attributes",
+      "question_text": "哪些特徵最能支持判斷某次攻擊可能是 state-sponsored actor？（選兩項）",
+      "options": {
+        "A": "只使用現成圖形化工具且無目標",
+        "B": "具長期資金與專業基礎設施",
+        "C": "以戰略情報或政治目標為主",
+        "D": "為了炫耀而隨機改首頁"
+      },
+      "answer": "BC",
+      "explanation": "國家支持的攻擊者通常擁有持續資源、較高能力，並服務於政治、軍事或情報目的；資源與目標同時符合時，判斷更有根據。",
+      "option_explanations": {
+        "A": "較符合低技能攻擊者。",
+        "B": "正確，持續資金和能力是重要屬性。",
+        "C": "正確，戰略與政治情報常是動機。",
+        "D": "更接近 notoriety 或惡作劇動機。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 2.2",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 2,
+      "objective": "2.2",
+      "category": "2. Threats, Vulnerabilities, and Attacks",
+      "chapter": "2.2",
+      "competency": "insider motivations",
+      "question_text": "離職員工在最後一天複製客戶名單並出售給競爭者。此案例最符合哪種威脅來源與動機？",
+      "options": {
+        "A": "恐怖分子，製造恐慌",
+        "B": "內部人員，財務或智財利益",
+        "C": "非蓄意人員，一般好奇",
+        "D": "外部 hacktivist，政治影響"
+      },
+      "answer": "B",
+      "explanation": "員工原本擁有內部存取權，且主動複製並出售客戶名單，屬內部威脅；出售資料通常代表財務利益，也可能造成組織智財與商業資料外洩。",
+      "option_explanations": {
+        "A": "沒有恐怖或混亂目的。",
+        "B": "正確，來源與動機均吻合。",
+        "C": "有明確故意行為，不是意外。",
+        "D": "沒有政治訴求，也不是外部來源。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 2.2",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 2,
+      "objective": "2.3",
+      "category": "2. Threats, Vulnerabilities, and Attacks",
+      "chapter": "2.3",
+      "competency": "supply chain threat vector",
+      "question_text": "SaaS 供應商的更新套件被攻擊者植入後門，客戶在正常更新後同時受害。這是哪種主要威脅向量？",
+      "options": {
+        "A": "DNS cache poisoning",
+        "B": "尾隨進入",
+        "C": "供應鏈攻擊",
+        "D": "肩窺"
+      },
+      "answer": "C",
+      "explanation": "攻擊者利用第三方供應商的軟體分發流程，把惡意內容隨合法更新送到下游客戶，正是供應鏈型威脅；受害者不必直接瀏覽惡意網站。",
+      "option_explanations": {
+        "A": "DNS 快取污染改變名稱解析。",
+        "B": "尾隨是實體門禁問題。",
+        "C": "正確，利用供應商與客戶間的信任關係。",
+        "D": "肩窺是觀察使用者輸入。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 2.3",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "type": "複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 2,
+      "objective": "2.3",
+      "category": "2. Threats, Vulnerabilities, and Attacks",
+      "chapter": "2.3",
+      "competency": "message and image vectors",
+      "question_text": "下列哪些訊息或影像型向量可能把受害者導向惡意網站或執行惡意內容？（選兩項）",
+      "options": {
+        "A": "只讀的離線紙本手冊",
+        "B": "含惡意 QR code 的 quishing 訊息",
+        "C": "無網路功能的螢幕保護程式",
+        "D": "協作工具中的冒充登入連結"
+      },
+      "answer": "BD",
+      "explanation": "Quishing 以 QR 圖碼包裝釣魚網址，協作工具訊息則可利用工作情境誘導使用者登入或下載；兩者都屬訊息與影像相關的社交工程向量。",
+      "option_explanations": {
+        "A": "離線紙本不會直接導向網路內容。",
+        "B": "正確，QR code 可隱藏釣魚目的地。",
+        "C": "沒有輸入或網路互動，風險不符。",
+        "D": "正確，協作平台訊息可偽造可信來源。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 2.3",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 2,
+      "objective": "2.3",
+      "category": "2. Threats, Vulnerabilities, and Attacks",
+      "chapter": "2.3",
+      "competency": "living-off-the-land",
+      "question_text": "EDR 發現 PowerShell 從 Outlook 子程序啟動，讀取瀏覽器憑證並連到外部主機；磁碟上沒有新執行檔。哪種初始威脅向量最值得優先調查？",
+      "options": {
+        "A": "只有外部 DNS resolver 故障",
+        "B": "僅因網路電纜老化造成傳輸錯誤",
+        "C": "只有作業系統硬碟容量不足",
+        "D": "誘導執行命令或巨集的惡意 email"
+      },
+      "answer": "D",
+      "explanation": "Outlook 為程序來源，應先調查郵件內容及附件如何觸發系統工具執行。",
+      "option_explanations": {
+        "A": "DNS 故障無法解釋 Outlook 啟動 PowerShell 並讀取憑證的程序鏈。",
+        "B": "纜線故障不會導致郵件程序觸發憑證存取命令。",
+        "C": "容量不足可造成錯誤，不能解釋可疑命令、憑證讀取及外部通訊。",
+        "D": "Outlook 為程序來源，應先調查郵件內容及附件如何觸發系統工具執行。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 2.3",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 2,
+      "objective": "2.4",
+      "category": "2. Threats, Vulnerabilities, and Attacks",
+      "chapter": "2.4",
+      "competency": "TOCTOU race condition",
+      "question_text": "程式先檢查暫存檔權限，數毫秒後才開啟該檔案；攻擊者在兩步驟間替換符號連結。這是哪類弱點？",
+      "options": {
+        "A": "TOCTOU race condition",
+        "B": "憑證撤銷失敗",
+        "C": "SQL injection",
+        "D": "緩衝區溢位"
+      },
+      "answer": "A",
+      "explanation": "Time-of-check 與 time-of-use 之間存在可被競爭的時間窗口；攻擊者趁檢查後、使用前替換目標，使程式操作未預期資源，正是 TOCTOU。",
+      "option_explanations": {
+        "A": "正確，檢查與使用非原子操作形成競爭條件。",
+        "B": "與憑證狀態無關。",
+        "C": "題目沒有資料庫查詢輸入。",
+        "D": "沒有記憶體邊界寫入描述。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 2.4",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "type": "情境題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 2,
+      "objective": "2.4",
+      "category": "2. Threats, Vulnerabilities, and Attacks",
+      "chapter": "2.4",
+      "competency": "cloud misconfiguration",
+      "question_text": "CSPM 發現儲存客戶發票的 object storage bucket 設成 public-read，且沒有業務需要公開存取。這主要是哪種攻擊面問題？",
+      "options": {
+        "A": "零日漏洞必然存在",
+        "B": "公開物件儲存的錯誤設定",
+        "C": "RF 干擾",
+        "D": "硬體供應不足"
+      },
+      "answer": "B",
+      "explanation": "bucket 的公開 ACL 使資料可被網際網路讀取，這是雲端資源錯誤設定造成的攻擊面暴露。CSPM 正是用來持續辨識這類姿態問題，而不是證明存在零日漏洞。",
+      "option_explanations": {
+        "A": "錯誤設定不等於零日漏洞。",
+        "B": "正確，public-read 直接擴大資料暴露面。",
+        "C": "RF 干擾不涉及 object storage 權限。",
+        "D": "與容量無關。 這不符合題目所要求的安全控制與判斷條件。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 2.4",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 2,
+      "objective": "2.4",
+      "category": "2. Threats, Vulnerabilities, and Attacks",
+      "chapter": "2.4",
+      "competency": "identity provider attack surface",
+      "question_text": "多個 SaaS 應用共用同一個身分提供者；攻擊者取得 IdP 管理員權限後可重設所有使用者 MFA。這說明哪項風險？",
+      "options": {
+        "A": "只有端點硬體故障",
+        "B": "無法被利用的過時服務",
+        "C": "集中式 IdP 的高影響攻擊面",
+        "D": "單純的資料分類問題"
+      },
+      "answer": "C",
+      "explanation": "IdP 是多個信賴服務的共同控制點。其管理員權限遭入侵時，攻擊者可影響大量聯邦身分與 MFA 設定，形成高集中度、高衝擊攻擊面。",
+      "option_explanations": {
+        "A": "沒有硬體故障證據。",
+        "B": "案例明確顯示可被利用。",
+        "C": "正確，共同身分根基被攻擊會擴大影響。",
+        "D": "核心是身分架構風險，不是分類標籤。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 2.4",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "type": "情境題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 2,
+      "objective": "2.5",
+      "category": "2. Threats, Vulnerabilities, and Attacks",
+      "chapter": "2.5",
+      "competency": "ransomware indicators",
+      "question_text": "多台工作站短時間內檔名被改為 .locked，使用者無法開啟文件，桌面出現付款要求；網路共享也大量產生加密檔。這最可能是什麼？",
+      "options": {
+        "A": "廣告軟體",
+        "B": "DNS spoofing",
+        "C": "肩窺",
+        "D": "勒索軟體"
+      },
+      "answer": "D",
+      "explanation": "大量檔案被加密或改名、服務可用性下降並出現付款要求，是勒索軟體的典型指標；跨網路共享擴散也顯示攻擊者可能取得了橫向存取。",
+      "option_explanations": {
+        "A": "廣告軟體主要顯示不需要的廣告。",
+        "B": "DNS spoofing 改變解析，不會加密文件。",
+        "C": "肩窺是實體觀察行為。",
+        "D": "正確，檔案加密與贖金要求直接吻合。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 2.5",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "type": "複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 2,
+      "objective": "2.5",
+      "category": "2. Threats, Vulnerabilities, and Attacks",
+      "chapter": "2.5",
+      "competency": "credential attack indicators",
+      "question_text": "SIEM 顯示同一帳號在兩個相距很遠的國家同時成功登入，並隨後出現大量 MFA 失敗。哪些是合理的初步 IOC？（選兩項）",
+      "options": {
+        "A": "正常的密碼輪替",
+        "B": "資料庫索引最佳化",
+        "C": "impossible travel",
+        "D": "concurrent sessions"
+      },
+      "answer": "CD",
+      "explanation": "不可能在短時間內從兩個遠距地點旅行並登入，屬 impossible travel；同一帳號的重疊工作階段則是 concurrent sessions，兩者都提示帳號遭竊或工作階段被濫用。",
+      "option_explanations": {
+        "A": "題目顯示異常登入，不是密碼輪替。",
+        "B": "與身分事件無關。",
+        "C": "正確，地理與時間不可能相容。",
+        "D": "正確，重疊登入可能代表憑證被分享或竊取。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 2.5",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 2,
+      "objective": "2.5",
+      "category": "2. Threats, Vulnerabilities, and Attacks",
+      "chapter": "2.5",
+      "competency": "DNS cache poisoning",
+      "question_text": "使用者輸入正確網域名稱卻被導向仿冒銀行網站，且多台用戶端從同一 DNS resolver 得到錯誤 IP。最可能是哪種攻擊？",
+      "options": {
+        "A": "DNS cache poisoning",
+        "B": "buffer overflow",
+        "C": "vishing",
+        "D": "尾隨"
+      },
+      "answer": "A",
+      "explanation": "攻擊者把錯誤的網域對應植入 resolver 快取，讓多個用戶端收到惡意 IP；這種名稱解析被污染的現象符合 DNS cache poisoning。",
+      "option_explanations": {
+        "A": "正確，快取中的錯誤對應造成一致導向。",
+        "B": "沒有記憶體寫入或程序崩潰證據。",
+        "C": "vishing 是語音社交工程。",
+        "D": "尾隨是門禁攻擊。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 2.5",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "type": "情境題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 2,
+      "objective": "2.5",
+      "category": "2. Threats, Vulnerabilities, and Attacks",
+      "chapter": "2.5",
+      "competency": "application attack indicators",
+      "question_text": "Web 伺服器日誌連續出現 `../../etc/passwd`，請求路徑超出應用程式預期目錄。這是什麼攻擊指標？",
+      "options": {
+        "A": "密碼噴灑",
+        "B": "目錄穿越",
+        "C": "DDoS",
+        "D": "憑證重播"
+      },
+      "answer": "B",
+      "explanation": "以 `../` 逐層離開預期根目錄並請求敏感檔案，是 directory traversal 的典型模式。防禦應驗證並正規化路徑，而不是只封鎖單一字串。",
+      "option_explanations": {
+        "A": "密碼噴灑是多帳號嘗試同一密碼。",
+        "B": "正確，路徑跳脫應用程式目錄。",
+        "C": "沒有大量流量耗盡服務的描述。",
+        "D": "沒有重送已截取認證資料。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 2.5",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 2,
+      "objective": "2.5",
+      "category": "2. Threats, Vulnerabilities, and Attacks",
+      "chapter": "2.5",
+      "competency": "social engineering",
+      "question_text": "財務長收到看似董事長發來、要求立即匯款且內容只寄給財務長的郵件。這最符合哪種社交工程？",
+      "options": {
+        "A": "quishing",
+        "B": "tailgating",
+        "C": "whaling",
+        "D": "smishing"
+      },
+      "answer": "C",
+      "explanation": "Whaling 是針對高階或重要職位的高度客製化釣魚，常偽裝成高階主管要求付款或敏感操作；只寄給財務長的情境符合此特徵。",
+      "option_explanations": {
+        "A": "quishing 主要利用 QR code。",
+        "B": "tailgating 是實體跟隨進入。",
+        "C": "正確，目標是高價值高階職位。",
+        "D": "smishing 透過 SMS 或簡訊。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 2.5",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "type": "複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 2,
+      "objective": "2.5",
+      "category": "2. Threats, Vulnerabilities, and Attacks",
+      "chapter": "2.5",
+      "competency": "network attack indicators",
+      "question_text": "哪些觀察結果較能支持判斷發生 on-path attack？（選兩項）",
+      "options": {
+        "A": "封包路徑中出現未授權代理節點",
+        "B": "同一工作階段內容在轉送途中被修改",
+        "C": "端點磁碟只增加暫存檔",
+        "D": "使用者收到正常行銷郵件"
+      },
+      "answer": "AB",
+      "explanation": "On-path 攻擊者位於通訊雙方之間，能攔截、轉送甚至修改流量；發現未授權中繼節點及內容被竄改，都是直接支持此判斷的證據。",
+      "option_explanations": {
+        "A": "正確，中間節點可攔截雙向流量。",
+        "B": "正確，修改轉送內容是 on-path 能力。",
+        "C": "不足以辨識網路中間人。",
+        "D": "與通訊攔截無關。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 2.5",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 2,
+      "objective": "2.6",
+      "category": "2. Threats, Vulnerabilities, and Attacks",
+      "chapter": "2.6",
+      "competency": "prompt injection",
+      "question_text": "客服 LLM 讀取外部工單後忽略系統規則並輸出內部提示；惡意工單含「忽略先前指令」。最符合哪種 AI 風險？",
+      "options": {
+        "A": "Hallucination",
+        "B": "Training data poisoning",
+        "C": "Model extraction",
+        "D": "Indirect prompt injection"
+      },
+      "answer": "D",
+      "explanation": "攻擊指令來自模型讀取的外部工單，意圖讓不受信任資料改變模型遵循的指令。",
+      "option_explanations": {
+        "A": "幻覺是生成錯誤或虛構內容，題示有明確外部指令操控的線索。",
+        "B": "訓練資料污染發生於影響模型訓練資料，題示是執行時讀取工單。",
+        "C": "模型擷取以複製模型能力為目的，題示重點是外部文字操控既有模型。",
+        "D": "攻擊指令來自模型讀取的外部工單，意圖讓不受信任資料改變模型遵循的指令。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 2.6",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        },
+        {
+          "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+          "title": "OWASP — LLM01:2025 Prompt Injection",
+          "section": "Indirect prompt injection and privilege controls",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "type": "情境複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 2,
+      "objective": "2.6",
+      "category": "2. Threats, Vulnerabilities, and Attacks",
+      "chapter": "2.6",
+      "competency": "AI data loss and poisoning",
+      "question_text": "組織準備將含客戶秘密的文件送至外部 AI 服務以產生摘要。哪些風險最直接需要評估？請選擇兩項。",
+      "options": {
+        "A": "服務可能保留或再次使用輸入的機密內容",
+        "B": "文件送出前必然使模型永久失去所有能力",
+        "C": "文件中的個資可能被輸出或跨租戶暴露",
+        "D": "只要摘要較短就自動符合所有資料用途限制"
+      },
+      "answer": "AC",
+      "explanation": "輸入資料的留存及用途可能造成未核准利用或披露，應查核服務設定與契約。 敏感資料外傳與輸出暴露直接影響 privacy，需限制內容與存取邊界。",
+      "option_explanations": {
+        "A": "輸入資料的留存及用途可能造成未核准利用或披露，應查核服務設定與契約。",
+        "B": "正常摘要輸入不表示模型必然失去能力，這不是題示資料披露風險。",
+        "C": "敏感資料外傳與輸出暴露直接影響 privacy，需限制內容與存取邊界。",
+        "D": "輸出長度不能保證輸入留存、個資及用途符合組織要求。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 2.6",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 2,
+      "objective": "2.6",
+      "category": "2. Threats, Vulnerabilities, and Attacks",
+      "chapter": "2.6",
+      "competency": "AI hallucination",
+      "question_text": "LLM 產生不存在的判例與引文，使用者未查證便採用。這主要是哪種 AI 弱點？",
+      "options": {
+        "A": "Hallucination",
+        "B": "Prompt injection",
+        "C": "Training data poisoning",
+        "D": "Session hijacking"
+      },
+      "answer": "A",
+      "explanation": "模型生成看似可信卻不存在的事實是幻覺，需以可查證來源交叉驗證。",
+      "option_explanations": {
+        "A": "模型生成看似可信卻不存在的事實是幻覺，需以可查證來源交叉驗證。",
+        "B": "題示沒有攻擊者注入指令以覆蓋規則的證據。",
+        "C": "沒有操控訓練資料的線索，不能只依錯誤引文判定污染。",
+        "D": "題示沒有竊取會話識別或冒用使用者的活動。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 2.6",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 2,
+      "objective": "2.6",
+      "category": "2. Threats, Vulnerabilities, and Attacks",
+      "chapter": "2.6",
+      "competency": "AI code execution",
+      "question_text": "自動化代理可將 LLM 產生的 Shell 指令直接送到生產伺服器執行。最重要的安全護欄是什麼？",
+      "options": {
+        "A": "移除所有日誌以提高速度",
+        "B": "沙箱、最小權限與人工核准高風險動作",
+        "C": "允許代理使用 root 以減少錯誤",
+        "D": "把提示詞放在公開網頁"
+      },
+      "answer": "B",
+      "explanation": "LLM 可能產生錯誤或被提示注入操控的指令；沙箱限制爆炸半徑，最小權限降低影響，人工核准則把高風險 code execution 保留在可審查流程。",
+      "option_explanations": {
+        "A": "無日誌會失去追溯能力。",
+        "B": "正確，形成執行隔離、權限限制與人員閘門。",
+        "C": "root 會放大錯誤與攻擊影響。",
+        "D": "公開提示會暴露內部控制與資料。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 2.6",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        },
+        {
+          "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+          "title": "OWASP — LLM01:2025 Prompt Injection",
+          "section": "Indirect prompt injection and privilege controls",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 2,
+      "objective": "2.6",
+      "category": "2. Threats, Vulnerabilities, and Attacks",
+      "chapter": "2.6",
+      "competency": "AI evasion and bias",
+      "question_text": "攻擊者微調惡意樣本的特徵，使既有偵測模型不再告警；未變更模型訓練資料。這是哪種 AI 攻擊？",
+      "options": {
+        "A": "Data poisoning",
+        "B": "Model inversion",
+        "C": "Evasion",
+        "D": "Model extraction"
+      },
+      "answer": "C",
+      "explanation": "在推論時改變輸入以躲避分類器，是 evasion 的典型方式。",
+      "option_explanations": {
+        "A": "資料污染改變訓練資料，題示明確未更動該資料。",
+        "B": "模型反推試圖推知敏感訓練資料，不是躲避惡意樣本分類。",
+        "C": "在推論時改變輸入以躲避分類器，是 evasion 的典型方式。",
+        "D": "模型擷取主要複製模型或其決策能力，與避開這次告警的目的不同。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 2.6",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 2,
+      "objective": "2.6",
+      "category": "2. Threats, Vulnerabilities, and Attacks",
+      "chapter": "2.6",
+      "competency": "AI session hijacking",
+      "question_text": "攻擊者竊取聊天機器人的 session token，以受害者上下文查詢歷史資料。這是哪種風險？",
+      "options": {
+        "A": "Model bias",
+        "B": "Data poisoning",
+        "C": "Hallucination",
+        "D": "Session hijacking"
+      },
+      "answer": "D",
+      "explanation": "有效會話 token 被竊後可用來冒用該會話，造成歷史資料與工具權限暴露。",
+      "option_explanations": {
+        "A": "偏差是輸出不公平或偏向，不能解釋竊取會話 token 後的冒用。",
+        "B": "訓練資料污染不需要使用受害者既有會話 token。",
+        "C": "幻覺是錯誤內容生成，不是取得他人會話與歷史資料。",
+        "D": "有效會話 token 被竊後可用來冒用該會話，造成歷史資料與工具權限暴露。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 2.6",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 3,
+      "objective": "3.1",
+      "category": "3. Security Architecture",
+      "chapter": "3.1",
+      "competency": "cloud responsibility",
+      "question_text": "公司使用 SaaS 電子郵件服務；供應商管理底層主機與應用程式，但公司仍須管理使用者權限與資料設定。這反映哪項概念？",
+      "options": {
+        "A": "共同責任模型",
+        "B": "物理分段",
+        "C": "完全由客戶負責",
+        "D": "氣隙網路"
+      },
+      "answer": "A",
+      "explanation": "雲端服務把部分基礎設施與平台控制交給供應商，但客戶仍需負責身分、資料與配置等範圍；責任依服務模型分配，不能假設供應商包辦一切。",
+      "option_explanations": {
+        "A": "正確，責任在供應商與客戶間分工。",
+        "B": "沒有描述實體網路隔離。",
+        "C": "SaaS 底層不由客戶管理。",
+        "D": "SaaS 不是隔離網路。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 3.1",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+          "title": "Microsoft — Shared responsibility in the cloud",
+          "section": "Responsibilities by cloud service model",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "type": "情境複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 3,
+      "objective": "3.1",
+      "category": "3. Security Architecture",
+      "chapter": "3.1",
+      "competency": "architecture models",
+      "question_text": "OT 控制網路需防止辦公網路入侵者直接到達控制器，但仍須支援受控維護。哪些架構措施最合適？請選擇兩項。",
+      "options": {
+        "A": "邏輯分隔並只允許必要通訊",
+        "B": "將辦公端點與控制器放在同一開放 VLAN",
+        "C": "讓控制器直接接受任意 Internet 管理流量",
+        "D": "專用管理網路與受監控跳板"
+      },
+      "answer": "AD",
+      "explanation": "邏輯分隔及明確 ACL 能限制一般辦公網路連到控制器的路徑。 受控管理通道保留必要維護，並減少非必要來源可直接連線。",
+      "option_explanations": {
+        "A": "邏輯分隔及明確 ACL 能限制一般辦公網路連到控制器的路徑。",
+        "B": "開放平面網路會增加到達控制器及橫向移動的機會。",
+        "C": "公開控制器管理服務會擴大可利用暴露面，不符合隔離需求。",
+        "D": "受控管理通道保留必要維護，並減少非必要來源可直接連線。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 3.1",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 3,
+      "objective": "3.1",
+      "category": "3. Security Architecture",
+      "chapter": "3.1",
+      "competency": "serverless and multicloud",
+      "question_text": "企業希望依事件量自動增加運算，且不管理作業系統修補；哪種模型最符合？",
+      "options": {
+        "A": "單一實體主機",
+        "B": "serverless",
+        "C": "冷站備援",
+        "D": "離線磁帶庫"
+      },
+      "answer": "B",
+      "explanation": "Serverless 以事件觸發函式並由供應商管理底層伺服器，通常可按需求擴展並減少客戶 OS 維護；仍須管理程式碼、身分與資料配置。",
+      "option_explanations": {
+        "A": "需自行管理主機與容量。",
+        "B": "正確，符合事件驅動與供應商管理底層。",
+        "C": "冷站是災難復原站點。",
+        "D": "磁帶庫是儲存，不是運算模型。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 3.1",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "type": "情境題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 3,
+      "objective": "3.2",
+      "category": "3. Security Architecture",
+      "chapter": "3.2",
+      "competency": "zero trust architecture",
+      "question_text": "遠端員工通過 IdP 驗證，但裝置缺少最新 EDR 與磁碟加密。即使帳號正確，Zero Trust 閘道仍拒絕存取。原因是什麼？",
+      "options": {
+        "A": "內網位置永遠優先",
+        "B": "所有端點都被視為可信",
+        "C": "裝置健康狀態是存取決策條件",
+        "D": "只要密碼正確就必須放行"
+      },
+      "answer": "C",
+      "explanation": "Zero Trust 不只驗證使用者，也評估裝置清冊、健康狀態與應用程式條件；缺少必要安全控制的端點不符合政策，即使身分驗證成功也可被拒絕。",
+      "option_explanations": {
+        "A": "依內網位置信任違反 Zero Trust。",
+        "B": "Zero Trust 不預設端點可信。",
+        "C": "正確，裝置姿態是動態政策輸入。",
+        "D": "單一密碼不足以滿足條件式存取。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 3.2",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        },
+        {
+          "url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+          "title": "NIST SP 800-207 — Zero Trust Architecture",
+          "section": "Zero Trust architecture and logical components",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "type": "複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 3,
+      "objective": "3.2",
+      "category": "3. Security Architecture",
+      "chapter": "3.2",
+      "competency": "identity and access architecture",
+      "question_text": "為降低 privilege creep，哪些做法最適合？（選兩項）",
+      "options": {
+        "A": "讓員工永久保留歷任職務權限",
+        "B": "定期 access review 並撤銷不再需要的角色",
+        "C": "使用 JIT 權限並設定到期時間",
+        "D": "以共用全域管理員帳號取代個人帳號"
+      },
+      "answer": "BC",
+      "explanation": "定期檢視可發現職務變動留下的多餘權限，JIT 則只在需要時短期授予並自動到期；兩者都直接降低權限累積。",
+      "option_explanations": {
+        "A": "會持續累積過度權限。",
+        "B": "正確，可移除職務變動產生的多餘權限。",
+        "C": "正確，縮短高權限存在時間。",
+        "D": "破壞個人追蹤並擴大影響。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 3.2",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 5,
+      "objective": "5.1",
+      "category": "5. Security Program Management and Oversight",
+      "chapter": "5.1",
+      "competency": "SOP and runbook governance",
+      "question_text": "事件團隊要把隔離端點的逐步操作、責任人與升級條件標準化。最適合建立哪種治理文件？",
+      "options": {
+        "A": "Risk register",
+        "B": "Reference architecture",
+        "C": "Privacy notice",
+        "D": "Runbook／SOP"
+      },
+      "answer": "D",
+      "explanation": "Runbook 與 SOP 描述可重複執行的操作步驟及責任，直接支持一致處理事件。",
+      "option_explanations": {
+        "A": "風險清冊記錄風險與處理狀態，不是事件隔離的逐步操作。",
+        "B": "參考架構呈現設計模式，不能取代事件操作流程。",
+        "C": "隱私告知說明資料處理目的，不負責定義端點隔離步驟。",
+        "D": "Runbook 與 SOP 描述可重複執行的操作步驟及責任，直接支持一致處理事件。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 5.1",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 5,
+      "objective": "5.2",
+      "category": "5. Security Program Management and Oversight",
+      "chapter": "5.2",
+      "competency": "risk treatment",
+      "question_text": "低機率但高衝擊的剩餘風險，經適當風險擁有人簽核決定承擔，並設定重評日期。這是哪種處理？",
+      "options": {
+        "A": "Risk acceptance",
+        "B": "Risk avoidance",
+        "C": "Risk transfer",
+        "D": "Risk mitigation"
+      },
+      "answer": "A",
+      "explanation": "適當責任人了解並正式承擔剩餘風險，是風險接受，重評日期支持持續治理。",
+      "option_explanations": {
+        "A": "適當責任人了解並正式承擔剩餘風險，是風險接受，重評日期支持持續治理。",
+        "B": "規避通常停止造成風險的活動，題示未停止該活動。",
+        "C": "轉移常透過保險或契約轉移部分影響，題示未描述轉移安排。",
+        "D": "減輕需要降低可能性或影響的控制，題示重點是正式承擔剩餘風險。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 5.2",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 5,
+      "objective": "5.3",
+      "category": "5. Security Program Management and Oversight",
+      "chapter": "5.3",
+      "competency": "third-party agreement",
+      "question_text": "委託 MSSP 監控 SOC 時，哪份文件應定義特定服務的工作範圍、交付成果、責任與時程？",
+      "options": {
+        "A": "Non-disclosure agreement",
+        "B": "Statement of Work",
+        "C": "Request for quote",
+        "D": "Expression of interest"
+      },
+      "answer": "B",
+      "explanation": "SOW 定義特定委託工作的範圍、成果及執行安排，符合題示的服務交付需求。",
+      "option_explanations": {
+        "A": "NDA 處理機密資訊披露責任，不主要定義服務交付時程及工作項目。",
+        "B": "SOW 定義特定委託工作的範圍、成果及執行安排，符合題示的服務交付需求。",
+        "C": "RFQ 用於取得報價，不是已約定的詳細工作交付文件。",
+        "D": "EOI 表示初步參與意向，未必包含具體服務交付及責任。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 5.3",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 5,
+      "objective": "5.4",
+      "category": "5. Security Program Management and Oversight",
+      "chapter": "5.4",
+      "competency": "privacy and legal hold",
+      "question_text": "組織提供可選的產品推廣通知，要求客戶先明確同意才寄送。此資料使用選擇最符合哪個概念？",
+      "options": {
+        "A": "Opt-out",
+        "B": "Legal hold",
+        "C": "Opt-in",
+        "D": "Right to be forgotten"
+      },
+      "answer": "C",
+      "explanation": "Opt-in 要求當事人先表示同意才加入該用途，符合先同意再寄送的情境。",
+      "option_explanations": {
+        "A": "Opt-out 通常預設參與再提供退出，與先取得同意的題示不同。",
+        "B": "法律保留暫停證據刪除，不決定推廣通知是否需先同意。",
+        "C": "Opt-in 要求當事人先表示同意才加入該用途，符合先同意再寄送的情境。",
+        "D": "刪除權涉及不再保留特定個資，與通知用途的加入方式不同。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 5.4",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "type": "情境題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 3,
+      "objective": "3.4",
+      "category": "3. Security Architecture",
+      "chapter": "3.4",
+      "competency": "RTO and RPO",
+      "question_text": "支付系統規定災害後 30 分鐘內恢復服務，且最多只能遺失 5 分鐘交易。這兩個要求分別是什麼？",
+      "options": {
+        "A": "RPO 30 分鐘、RTO 5 分鐘",
+        "B": "MTBF 30 分鐘、MTTR 5 分鐘",
+        "C": "RTO 與 MTBF 都是 5 分鐘",
+        "D": "RTO 30 分鐘、RPO 5 分鐘"
+      },
+      "answer": "D",
+      "explanation": "RTO 表示可接受的服務恢復時間，RPO 表示可接受的資料遺失時間點；題目分別給出 30 分鐘恢復與 5 分鐘資料遺失，因此 A 正確。",
+      "option_explanations": {
+        "A": "將兩項指標對調。",
+        "B": "MTBF 與 MTTR 是可靠度和修復指標。",
+        "C": "未反映服務恢復要求。",
+        "D": "正確，依序對應時間恢復與資料點。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 3.4",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "type": "情境複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 3,
+      "objective": "3.4",
+      "category": "3. Security Architecture",
+      "chapter": "3.4",
+      "competency": "backup resilience",
+      "question_text": "備份管理帳號也可能遭 ransomware 竊取。哪些設計能直接降低備份被刪除或修改的風險？請選擇兩項。",
+      "options": {
+        "A": "只保留同一主機的可寫入即時副本",
+        "B": "受保留期保護的 immutable backup",
+        "C": "讓同一管理帳號可立即刪除所有副本",
+        "D": "隔離或離線且使用獨立存取控制的副本"
+      },
+      "answer": "BD",
+      "explanation": "不可變備份在既定期間限制刪改，可避免取得一般管理權限後任意破壞副本。 隔離及獨立控制降低正式環境憑證被竊時一起觸及所有備份的機會。",
+      "option_explanations": {
+        "A": "同機可寫入副本可能與正式資料一起被破壞，不能建立復原隔離。",
+        "B": "不可變備份在既定期間限制刪改，可避免取得一般管理權限後任意破壞副本。",
+        "C": "共用刪除權限會使備份同時遭攻擊者移除，與保護目的相反。",
+        "D": "隔離及獨立控制降低正式環境憑證被竊時一起觸及所有備份的機會。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 3.4",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 3,
+      "objective": "3.4",
+      "category": "3. Security Architecture",
+      "chapter": "3.4",
+      "competency": "site resilience",
+      "question_text": "公司需要可在幾小時內接手生產工作，且已有部分硬體與網路配置，但仍須恢復最新資料。應選哪種備援站？",
+      "options": {
+        "A": "warm site",
+        "B": "hot site",
+        "C": "cold site",
+        "D": "只存紙本程序的站點"
+      },
+      "answer": "A",
+      "explanation": "Warm site 已具備部分設備與網路，啟用速度比 cold site 快，但仍需載入資料或完成部分配置；hot site 則通常已近即時運作，成本更高。",
+      "option_explanations": {
+        "A": "正確，部分就緒且需補資料。",
+        "B": "hot site 通常已高度同步，超出題目描述。",
+        "C": "cold site 只有空間與基本條件，恢復較慢。",
+        "D": "缺少可用的技術基礎。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 3.4",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 3,
+      "objective": "3.4",
+      "category": "3. Security Architecture",
+      "chapter": "3.4",
+      "competency": "high availability",
+      "question_text": "Web 服務需要在單一節點故障時仍由其他節點服務使用者。哪項架構最直接滿足需求？",
+      "options": {
+        "A": "單一大型主機",
+        "B": "負載平衡搭配多節點高可用叢集",
+        "C": "只增加磁碟容量",
+        "D": "停用健康檢查"
+      },
+      "answer": "B",
+      "explanation": "負載平衡可把請求分散到多個節點，健康檢查與叢集可在節點故障時移除失效成員並維持服務；單一主機沒有故障容忍能力。",
+      "option_explanations": {
+        "A": "仍是單一故障點。",
+        "B": "正確，提供分散負載與節點容錯。",
+        "C": "容量增加不等於節點冗餘。",
+        "D": "沒有健康檢查反而可能把流量送向故障節點。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 3.4",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.1",
+      "category": "4. Security Operations",
+      "chapter": "4.1",
+      "competency": "WAF and input validation",
+      "question_text": "電商應用的查詢欄位遭到 SQL injection；哪項控制最直接針對 Web 請求與輸入？",
+      "options": {
+        "A": "關閉所有 syslog",
+        "B": "使用冷站",
+        "C": "WAF 規則與伺服器端 input validation",
+        "D": "只增加 UPS"
+      },
+      "answer": "C",
+      "explanation": "WAF 可在應用程式前檢查並阻擋惡意 HTTP 請求，伺服器端輸入驗證與參數化查詢則從程式邏輯拒絕不合法資料；兩者直接降低 injection 風險。",
+      "option_explanations": {
+        "A": "關閉記錄會降低調查能力。",
+        "B": "冷站是復原設施，不是 Web 防禦。",
+        "C": "正確，分別在邊界與應用程式層防護。",
+        "D": "UPS 處理電力，不處理輸入。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.1",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "type": "複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.1",
+      "category": "4. Security Operations",
+      "chapter": "4.1",
+      "competency": "email security",
+      "question_text": "組織要降低網域遭冒用寄信的風險，哪些控制應配置？（選兩項）",
+      "options": {
+        "A": "只使用網頁快取",
+        "B": "停用 DNSSEC 以簡化管理",
+        "C": "SPF",
+        "D": "DKIM"
+      },
+      "answer": "CD",
+      "explanation": "SPF 宣告哪些郵件伺服器可代表網域寄信，DKIM 以簽章驗證郵件內容與來源；DMARC 還可定義未通過驗證的處置，三者可共同降低冒用。",
+      "option_explanations": {
+        "A": "快取不驗證寄件來源。",
+        "B": "與郵件來源驗證無關且可能降低 DNS 安全。",
+        "C": "正確，限制可代表網域的寄件來源。",
+        "D": "正確，驗證郵件簽章與內容完整性。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.1",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "type": "情境題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.1",
+      "category": "4. Security Operations",
+      "chapter": "4.1",
+      "competency": "NAC and endpoint posture",
+      "question_text": "訪客裝置連接 Wi-Fi 後只能到註冊入口，無法存取內部 VLAN；員工筆電必須通過 802.1X 與姿態檢查。這是什麼控制組合？",
+      "options": {
+        "A": "只有封包分析",
+        "B": "只使用 honeyfile",
+        "C": "單純的 full disk encryption",
+        "D": "NAC 搭配 captive portal 與 802.1X"
+      },
+      "answer": "D",
+      "explanation": "Captive portal 可隔離訪客並要求註冊，802.1X 以網路層驗證端點，姿態檢查則決定是否符合合規狀態；這組行為符合 Network Access Control。",
+      "option_explanations": {
+        "A": "封包分析不會授權或隔離端點。",
+        "B": "honeyfile 是欺騙偵測資產。",
+        "C": "磁碟加密不能控制 VLAN 存取。",
+        "D": "正確，涵蓋訪客入口、身分與端點合規。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.1",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.1",
+      "category": "4. Security Operations",
+      "chapter": "4.1",
+      "competency": "deception technology",
+      "question_text": "SOC 建立一個看似含有財務機密的檔案，任何開啟或複製行為都會告警。這是什麼？",
+      "options": {
+        "A": "honeyfile",
+        "B": "安全基準",
+        "C": "正式備份",
+        "D": "allow list"
+      },
+      "answer": "A",
+      "explanation": "Honeyfile 是放置在環境中的誘餌檔案，合法使用者通常不應接觸；一旦被開啟或複製即可提供高信號的入侵告警與調查線索。",
+      "option_explanations": {
+        "A": "正確，檔案本身是誘餌偵測器。",
+        "B": "基準描述配置標準，不會主動告警。",
+        "C": "備份的目的在復原，不是誘捕。",
+        "D": "allow list 是允許清單控制。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.1",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.2",
+      "category": "4. Security Operations",
+      "chapter": "4.2",
+      "competency": "asset lifecycle disposal",
+      "question_text": "公司汰換含有客戶資料的 SSD；最重要的 decommissioning 步驟是什麼？",
+      "options": {
+        "A": "直接丟入一般垃圾桶",
+        "B": "依政策安全抹除或銷毀並保留處置紀錄",
+        "C": "只刪除桌面捷徑",
+        "D": "把 SSD 借給外部承包商使用"
+      },
+      "answer": "B",
+      "explanation": "資產處置必須確保資料不可由下一個持有人復原，並留下序號、方法與授權紀錄，以支持問責和合規；一般刪除不等於安全抹除。",
+      "option_explanations": {
+        "A": "可能造成資料殘留與實體洩漏。",
+        "B": "正確，兼顧資料清除與可稽核性。",
+        "C": "捷徑不會刪除實際資料。",
+        "D": "未經清除就移轉會暴露客戶資料。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.2",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        },
+        {
+          "url": "https://csrc.nist.gov/pubs/sp/800/88/r2/final",
+          "title": "NIST SP 800-88 Rev. 2 — Guidelines for Media Sanitization",
+          "section": "Media sanitization program and disposal",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "type": "情境題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.3",
+      "category": "4. Security Operations",
+      "chapter": "4.3",
+      "competency": "vulnerability management",
+      "question_text": "掃描顯示外部 VPN 閘道存在高嚴重度漏洞，且已有公開 exploit；團隊下一步應如何處理？",
+      "options": {
+        "A": "等年度稽核才處理",
+        "B": "刪除掃描結果避免告警",
+        "C": "先依嚴重度與暴露性排序，立即修補並驗證",
+        "D": "只修補內部低風險印表機"
+      },
+      "answer": "C",
+      "explanation": "外部暴露、嚴重度高且有公開 exploit 代表可利用性與衝擊都高，應優先修補或採取緩解，完成後重新掃描或測試驗證，並報告結果。",
+      "option_explanations": {
+        "A": "延後會留下可被利用的入口。",
+        "B": "刪除證據不會修復漏洞。",
+        "C": "正確，完整涵蓋排序、修補與驗證。",
+        "D": "忽略高風險外部服務不合理。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.3",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        },
+        {
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+          "title": "CISA — Known Exploited Vulnerabilities Catalog",
+          "section": "Prioritizing vulnerabilities known to be exploited",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "type": "複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.3",
+      "category": "4. Security Operations",
+      "chapter": "4.3",
+      "competency": "vulnerability identification",
+      "question_text": "哪些方法可協助發現雲端配置或程式碼中的弱點？（選兩項）",
+      "options": {
+        "A": "CSPM",
+        "B": "source code review",
+        "C": "只看員工滿意度調查",
+        "D": "停用 IPAM"
+      },
+      "answer": "AB",
+      "explanation": "CSPM 能檢查雲端資源的安全姿態與錯誤配置，source code review 則可在部署前發現不安全程式邏輯與秘密；兩者分別覆蓋配置與程式碼面。",
+      "option_explanations": {
+        "A": "正確，可持續檢查雲端姿態。",
+        "B": "正確，可在程式層發現缺陷。",
+        "C": "不提供技術漏洞證據。",
+        "D": "IPAM 的停用不會識別程式弱點。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.3",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.4",
+      "category": "4. Security Operations",
+      "chapter": "4.4",
+      "competency": "SIEM and log aggregation",
+      "question_text": "SOC 想把防火牆、IdP 與端點事件集中關聯，並依規則產生告警。最適合的工具是什麼？",
+      "options": {
+        "A": "NAC",
+        "B": "單一網段的 passive IDS",
+        "C": "DLP gateway",
+        "D": "SIEM"
+      },
+      "answer": "D",
+      "explanation": "SIEM 可集中收集與正規化多來源日誌，依時間、帳號與 IP 關聯事件並產生告警；這比各系統分開檢視更適合跨來源偵測。",
+      "option_explanations": {
+        "A": "NAC 主要限制裝置接入網路，不是跨來源日誌關聯及警示的集中平台。",
+        "B": "單一 IDS 偵測所觀察的流量，不等於集中 IdP、端點與防火牆事件進行關聯。",
+        "C": "DLP 主要依內容限制資料傳出，不能取代多來源安全事件的集中關聯分析。",
+        "D": "正確，提供聚合、關聯與告警。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.4",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "type": "複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.4",
+      "category": "4. Security Operations",
+      "chapter": "4.4",
+      "competency": "network monitoring protocols",
+      "question_text": "哪些資料或協定適合觀察網路流量與裝置狀態？（選兩項）",
+      "options": {
+        "A": "NetFlow/IPFIX",
+        "B": "只使用螢幕截圖",
+        "C": "SNMP",
+        "D": "只保留使用者密碼"
+      },
+      "answer": "AC",
+      "explanation": "NetFlow/IPFIX 提供來源、目的、埠與流量統計，SNMP 可取得網路裝置狀態與效能計數器；兩者都支援網路監控與異常分析。",
+      "option_explanations": {
+        "A": "正確，提供流量摘要與流向。",
+        "B": "無法持續或結構化監控網路。",
+        "C": "正確，可查詢裝置管理與效能資訊。",
+        "D": "密碼不是流量或裝置狀態資料。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.4",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "type": "情境題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.4",
+      "category": "4. Security Operations",
+      "chapter": "4.4",
+      "competency": "alert tuning",
+      "question_text": "SIEM 每分鐘對備份服務產生數千個已知正常告警，真正的異常被淹沒。最適當的處理是什麼？",
+      "options": {
+        "A": "調整規則閾值與例外，並以基線驗證",
+        "B": "永久停用整個 SIEM",
+        "C": "刪除所有歷史日誌",
+        "D": "把每個告警都升級成最高優先級"
+      },
+      "answer": "A",
+      "explanation": "Alert tuning 應利用已知正常基線、適當閾值與有範圍的例外降低噪音，再以測試確認沒有掩蓋真實攻擊；完全停用或全升級都會降低分析品質。",
+      "option_explanations": {
+        "A": "正確，降低誤報並保留有價值的訊號。",
+        "B": "會失去集中監控。",
+        "C": "破壞調查與趨勢分析。",
+        "D": "告警疲勞會更嚴重。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.4",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.5",
+      "category": "4. Security Operations",
+      "chapter": "4.5",
+      "competency": "federation protocols",
+      "question_text": "企業要讓 SaaS 服務信任內部 IdP 發出的登入斷言，且使用瀏覽器 SSO。哪項協定最符合？",
+      "options": {
+        "A": "NetFlow",
+        "B": "SAML",
+        "C": "SCAP",
+        "D": "SNMP"
+      },
+      "answer": "B",
+      "explanation": "SAML 以 XML assertion 在身分提供者與服務提供者間傳遞驗證結果，常用於企業瀏覽器 SSO；其他選項分別屬於網管、流量與配置標準。",
+      "option_explanations": {
+        "A": "NetFlow 描述流量。",
+        "B": "正確，SAML 支援聯邦登入斷言。",
+        "C": "SCAP 用於安全內容自動化。",
+        "D": "SNMP 用於網路管理。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.5",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "type": "情境題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.5",
+      "category": "4. Security Operations",
+      "chapter": "4.5",
+      "competency": "provisioning and deprovisioning",
+      "question_text": "員工離職後仍可登入 CRM，因 HR 通知未觸發帳號停用流程。最直接的改進是什麼？",
+      "options": {
+        "A": "延長所有帳號密碼期限",
+        "B": "讓離職者保留唯讀權限",
+        "C": "整合 HR 與 IdP 的自動 deprovisioning 工作流程",
+        "D": "只增加登入頁圖片驗證"
+      },
+      "answer": "C",
+      "explanation": "離職事件應可靠地觸發帳號停用、token 撤銷與群組權限移除；將 HR 生命週期與 IdP provisioning/deprovisioning 整合，可縮短暴露窗口並降低人工遺漏。",
+      "option_explanations": {
+        "A": "延長期限會加大風險。",
+        "B": "離職後仍保留權限不符合最小權限。",
+        "C": "正確，直接處理生命週期事件與權限撤銷。",
+        "D": "圖片驗證不能撤銷既有帳號。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.5",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "type": "複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.5",
+      "category": "4. Security Operations",
+      "chapter": "4.5",
+      "competency": "MFA factors and account types",
+      "question_text": "哪些措施可強化特權帳號登入？（選兩項）",
+      "options": {
+        "A": "使用硬體 token 或 passkey",
+        "B": "所有管理員共用一組密碼",
+        "C": "把 backup code 貼在螢幕旁",
+        "D": "為高風險操作啟用 JIT 管理權限"
+      },
+      "answer": "AD",
+      "explanation": "硬體 token 或 passkey 能提供抗釣魚的額外驗證，JIT 讓管理權限只在核准時短暫存在；共用密碼與公開 backup code 會破壞追蹤和 MFA。",
+      "option_explanations": {
+        "A": "正確，提供較強的身分因素與抗釣魚能力。",
+        "B": "無法歸屬個人，且易被共享。",
+        "C": "公開備援碼等同把第二因素交給攻擊者。",
+        "D": "正確，縮短高權限有效時間。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.5",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.5",
+      "category": "4. Security Operations",
+      "chapter": "4.5",
+      "competency": "access control models",
+      "question_text": "醫院依「放射科醫師」職務角色授予影像讀取權限，由中央管理員維護角色成員。主要是哪種 access control model？",
+      "options": {
+        "A": "DAC",
+        "B": "MAC",
+        "C": "ABAC",
+        "D": "RBAC"
+      },
+      "answer": "D",
+      "explanation": "RBAC 以工作角色配置權限，題示以職務角色決定影像讀取能力。",
+      "option_explanations": {
+        "A": "DAC 通常由物件擁有人決定分享權限，題示是中央角色授權。",
+        "B": "MAC 常依安全標籤及許可等級強制判斷，題示沒有標籤與 clearance 規則。",
+        "C": "ABAC 綜合主體、資源與環境屬性判斷，題示明確以角色成員身分為主要基礎。",
+        "D": "RBAC 以工作角色配置權限，題示以職務角色決定影像讀取能力。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.5",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "type": "情境題（複選）",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.6",
+      "category": "4. Security Operations",
+      "chapter": "4.6",
+      "competency": "automation guardrails",
+      "question_text": "SOC 想自動隔離疑似感染端點。哪些護欄能降低自動化誤傷？（選兩項）",
+      "options": {
+        "A": "讓腳本接受任意使用者輸入並以 root 執行",
+        "B": "只對高信心、多來源驗證的事件自動執行",
+        "C": "保留人工覆核與緊急解除隔離流程",
+        "D": "移除變更與執行日誌"
+      },
+      "answer": "BC",
+      "explanation": "自動化隔離可能中斷關鍵業務，因此應設置信心門檻與多來源條件，並保留人工覆核、回復與完整記錄；這些是明確的 guardrails。",
+      "option_explanations": {
+        "A": "任意輸入與 root 會放大注入風險。",
+        "B": "正確，降低誤判觸發機率。",
+        "C": "正確，保留人員判斷與可復原性。",
+        "D": "無日誌無法稽核或改善流程。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.6",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.6",
+      "category": "4. Security Operations",
+      "chapter": "4.6",
+      "competency": "desired state management",
+      "question_text": "每次部署後，自動化工具都將伺服器防火牆、服務與套件恢復到核准基準。這種用途是什麼？",
+      "options": {
+        "A": "desired state management",
+        "B": "被動封包擷取",
+        "C": "資料擁有權轉移",
+        "D": "法律保留"
+      },
+      "answer": "A",
+      "explanation": "Desired state management 以宣告式基準描述應有配置，工具持續偵測偏差並校正，使環境回到核准狀態；它能提高一致性並降低配置漂移。",
+      "option_explanations": {
+        "A": "正確，持續維持宣告的安全狀態。",
+        "B": "封包擷取是觀測資料，不會修正配置。",
+        "C": "與資產責任無關。",
+        "D": "法律保留是證據保存要求。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.6",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "type": "複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.6",
+      "category": "4. Security Operations",
+      "chapter": "4.6",
+      "competency": "AI capabilities in SecOps",
+      "question_text": "在 SecOps 使用 AI 輔助分析時，哪些作法較能控制風險？（選兩項）",
+      "options": {
+        "A": "讓聊天機器人直接刪除所有告警",
+        "B": "以 AI 產生的摘要連結原始證據供分析師覆核",
+        "C": "把未遮罩的客戶秘密送到公共模型",
+        "D": "限制 agentic AI 可呼叫的工具與權限"
+      },
+      "answer": "BD",
+      "explanation": "原始證據連結能讓分析師驗證摘要、降低 hallucination 影響；限制 agent 可用工具與權限則縮小錯誤或 prompt injection 的爆炸半徑，符合 AI guardrail。",
+      "option_explanations": {
+        "A": "不可逆且可能刪除真實事件。",
+        "B": "正確，保留可驗證性與人員判斷。",
+        "C": "造成資料外洩與隱私風險。",
+        "D": "正確，限制代理能力與執行範圍。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.6",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        },
+        {
+          "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+          "title": "OWASP — LLM01:2025 Prompt Injection",
+          "section": "Indirect prompt injection and privilege controls",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "type": "情境題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.7",
+      "category": "4. Security Operations",
+      "chapter": "4.7",
+      "competency": "incident response containment",
+      "question_text": "EDR 確認一台筆電正在向 C2 通訊，但調查人員尚未完成記憶體擷取。第一個最適當的 containment 動作是什麼？",
+      "options": {
+        "A": "立即重灌且不記錄",
+        "B": "隔離端點網路並保留證據",
+        "C": "把樣本寄給所有員工",
+        "D": "公開攻擊者個資"
+      },
+      "answer": "B",
+      "explanation": "隔離可阻止持續 C2 與橫向移動，同時應保留磁碟、記憶體與日誌等證據供調查；直接重灌可能摧毀 volatile evidence，公開個資也不屬專業處置。",
+      "option_explanations": {
+        "A": "會破壞記憶體和時間線證據。",
+        "B": "正確，兼顧 containment 與證據保存。",
+        "C": "擴大惡意樣本暴露。",
+        "D": "不是合法或必要的事件回應。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.7",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.7",
+      "category": "4. Security Operations",
+      "chapter": "4.7",
+      "competency": "chain of custody",
+      "question_text": "調查人員從伺服器取得磁碟映像，記錄收集者、時間、雜湊與每次移交。這主要維護什麼？",
+      "options": {
+        "A": "安全基準",
+        "B": "負載平衡",
+        "C": "chain of custody",
+        "D": "資料遮罩"
+      },
+      "answer": "C",
+      "explanation": "Chain of custody 透過完整的收集、封存、移交與完整性記錄，證明證據自取得後未被未授權更動，並讓後續法律或內部程序可接受。",
+      "option_explanations": {
+        "A": "基準是配置標準。",
+        "B": "負載平衡分散服務流量。",
+        "C": "正確，記錄證據控制歷程與完整性。",
+        "D": "遮罩會改變資料呈現，不是證據交接。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.7",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "type": "複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.7",
+      "category": "4. Security Operations",
+      "chapter": "4.7",
+      "competency": "incident preparation and post incident",
+      "question_text": "哪些活動屬於事件回應的 preparation 或 post-incident 階段？（選兩項）",
+      "options": {
+        "A": "刪除所有 playbook",
+        "B": "在未授權下公開受害者資料",
+        "C": "進行 tabletop exercise",
+        "D": "完成 root cause analysis 與 lessons learned"
+      },
+      "answer": "CD",
+      "explanation": "Tabletop exercise 在事件前驗證角色與 playbook；root cause analysis 與 lessons learned 在事件後找出根因並改善控制，兩者分屬準備與事後階段。",
+      "option_explanations": {
+        "A": "刪除 playbook 會降低準備度。",
+        "B": "違反通知、隱私與證據處理要求。",
+        "C": "正確，事前演練準備人員與流程。",
+        "D": "正確，事後分析根因並改善。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.7",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "type": "情境題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.8",
+      "category": "4. Security Operations",
+      "chapter": "4.8",
+      "competency": "forensic artifacts",
+      "question_text": "分析師要判斷攻擊者是否在伺服器上執行命令，並保留關機後會消失的程序與連線資訊。應優先取得什麼？",
+      "options": {
+        "A": "只截取桌面圖片",
+        "B": "印出使用者手冊",
+        "C": "刪除 pagefile",
+        "D": "記憶體 dump"
+      },
+      "answer": "D",
+      "explanation": "記憶體 dump 可保存正在執行的程序、連線、金鑰與其他 volatile artifacts；若先關機或清除 pagefile，這些證據可能永久消失，因此應依程序先採集。",
+      "option_explanations": {
+        "A": "圖片無法呈現程序與連線狀態。",
+        "B": "手冊不是主機活動證據。",
+        "C": "會破壞可能包含的證據。",
+        "D": "正確，保存 volatile runtime evidence。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.8",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.8",
+      "category": "4. Security Operations",
+      "chapter": "4.8",
+      "competency": "log sources",
+      "question_text": "要判斷某帳號是否從不可能地點登入，最有用的資料組合是什麼？",
+      "options": {
+        "A": "驗證日誌與來源 IP/地理資訊",
+        "B": "DNS query logs 與 resolver cache",
+        "C": "弱點掃描報告與套件版本",
+        "D": "組態基準與配置差異報告"
+      },
+      "answer": "A",
+      "explanation": "驗證日誌提供帳號、時間與成功或失敗結果，來源 IP 與地理資訊可支援 impossible travel 判斷；需再與 VPN、代理等情境交叉驗證，不能只靠單一資料。",
+      "option_explanations": {
+        "A": "正確，直接涵蓋身分事件的關鍵欄位。",
+        "B": "DNS 記錄支援名稱解析調查，通常不能把帳號登入時間連結至地理位置。",
+        "C": "掃描資料可判定弱點，但不提供個別帳號的登入時間及來源。",
+        "D": "組態差異支援誤設定調查，不是判斷登入地點與時間的直接資料。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.8",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "type": "複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.8",
+      "category": "4. Security Operations",
+      "chapter": "4.8",
+      "competency": "file and log integrity",
+      "question_text": "調查員要證明取得的系統映像未被改動，哪些做法合適？（選兩項）",
+      "options": {
+        "A": "取得時計算雜湊並在分析前重新驗證",
+        "B": "保存 bit-level copy 並限制原始證據寫入",
+        "C": "直接在原始磁碟上修復檔案",
+        "D": "只依檔案名稱判斷相同"
+      },
+      "answer": "AB",
+      "explanation": "雜湊可比較證據前後完整性，bit-level copy 則保留未修改的逐位內容；原始證據應以唯讀或受控方式保存，避免調查操作造成污染。",
+      "option_explanations": {
+        "A": "正確，提供可驗證的完整性指紋。",
+        "B": "正確，保留完整原始證據。",
+        "C": "會改變證據並破壞可採信性。",
+        "D": "名稱可被修改，不能證明內容相同。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.8",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 4,
+      "objective": "4.8",
+      "category": "4. Security Operations",
+      "chapter": "4.8",
+      "competency": "packet capture and NetFlow",
+      "question_text": "調查員需要確認可疑主機是否與 C2 建立短連線，並比較流量方向與位元組量。哪項資料最適合先看？",
+      "options": {
+        "A": "資料分類政策",
+        "B": "NetFlow/IPFIX",
+        "C": "紙本資產清冊",
+        "D": "螢幕保護程式設定"
+      },
+      "answer": "B",
+      "explanation": "NetFlow/IPFIX 提供來源、目的、埠、時間與流量量等摘要，適合快速確認連線模式與流向；若需封包內容，再進一步取得 packet capture。",
+      "option_explanations": {
+        "A": "政策不提供 C2 流量證據。",
+        "B": "正確，適合先做流量關係與時間線分析。",
+        "C": "資產清冊不含即時連線。",
+        "D": "與網路活動無關。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 4.8",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 3,
+      "objective": "3.1",
+      "category": "3. Security Architecture",
+      "chapter": "3.1",
+      "competency": "logical and physical segmentation",
+      "question_text": "研究網路必須與生產網路分隔，但仍需讓核准的管理通訊通過。哪種設計最合適？",
+      "options": {
+        "A": "把所有主機放在同一 VLAN 且不設存取限制",
+        "B": "只改研究網路主機名稱而維持任意互通",
+        "C": "分開網段並以防火牆限制必要來源、目的與 port",
+        "D": "建立完全無通訊連結的 air gap 作為唯一管理通道"
+      },
+      "answer": "C",
+      "explanation": "網段分隔及邊界規則限制非必要通訊，同時保留明確核准的管理通道。",
+      "option_explanations": {
+        "A": "平面網路不建立研究與生產的通訊邊界。",
+        "B": "命名改變不會限制封包路徑或建立邏輯隔離。",
+        "C": "網段分隔及邊界規則限制非必要通訊，同時保留明確核准的管理通道。",
+        "D": "完全無連結的 air gap 本身不能滿足題示仍需通過的網路管理流量。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 3.1",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 3,
+      "objective": "3.3",
+      "category": "3. Security Architecture",
+      "chapter": "3.3",
+      "competency": "tokenization",
+      "question_text": "付款分析只需要辨識同一張卡的交易，不需要還原真實卡號。若要以受控 vault 保留可還原對照，哪種方法最適合？",
+      "options": {
+        "A": "Base64 encoding",
+        "B": "只做磁碟加密並仍顯示完整卡號",
+        "C": "只加入 digital signature 而不替代卡號",
+        "D": "Tokenization"
+      },
+      "answer": "D",
+      "explanation": "Token 可替代真實卡號供交易關聯，受控 vault 保留映射以支援另行授權的還原。",
+      "option_explanations": {
+        "A": "Base64 是可直接解碼的編碼，不能將敏感值與分析環境隔離。",
+        "B": "磁碟加密不會遮蔽應用程式授權讀取後看到的敏感內容。",
+        "C": "簽章驗證來源與完整性，不會把敏感卡號替換為 token。",
+        "D": "Token 可替代真實卡號供交易關聯，受控 vault 保留映射以支援另行授權的還原。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 3.3",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 3,
+      "objective": "3.4",
+      "category": "3. Security Architecture",
+      "chapter": "3.4",
+      "competency": "MTTR and recovery",
+      "question_text": "兩個方案達到相同 RTO；甲的平均修復時間為二十分鐘，乙為五分鐘。比較這項實測能力應使用哪個指標？",
+      "options": {
+        "A": "MTTR",
+        "B": "MTBF",
+        "C": "RPO",
+        "D": "ARO"
+      },
+      "answer": "A",
+      "explanation": "Mean time to repair/recover 衡量平均修復或恢復所需時間，符合實測二十與五分鐘的比較。",
+      "option_explanations": {
+        "A": "Mean time to repair/recover 衡量平均修復或恢復所需時間，符合實測二十與五分鐘的比較。",
+        "B": "Mean time between failures 衡量兩次故障之間的平均時間，不是修復耗時。",
+        "C": "Recovery point objective 定義可容忍的資料回復時間點差距，與修復耗時不同。",
+        "D": "Annualized rate of occurrence 是每年事件發生率，不是修復時間。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 3.4",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 3,
+      "objective": "3.4",
+      "category": "3. Security Architecture",
+      "chapter": "3.4",
+      "competency": "active and passive high availability",
+      "question_text": "高可用叢集的兩個節點平時都處理正式工作負載，任一節點失效時另一節點繼續服務。這是哪種配置？",
+      "options": {
+        "A": "Active-passive",
+        "B": "Active-active",
+        "C": "Cold site",
+        "D": "Offline backup"
+      },
+      "answer": "B",
+      "explanation": "Active-active 的節點平時都主動提供服務，符合兩個節點同時處理工作負載的情境。",
+      "option_explanations": {
+        "A": "Active-passive 有待命節點，通常待主動節點失效才接管服務。",
+        "B": "Active-active 的節點平時都主動提供服務，符合兩個節點同時處理工作負載的情境。",
+        "C": "Cold site 尚需部署設備和資料，不是兩個同時運作的服務節點。",
+        "D": "離線備份保存資料供恢復，本身不會持續處理正式請求。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 3.4",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "type": "情境複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 3,
+      "objective": "3.1",
+      "category": "3. Security Architecture",
+      "chapter": "3.1",
+      "competency": "microservices and attack surface",
+      "question_text": "微服務平台希望限制單一服務遭入侵後的橫向影響。哪些架構措施最有效？請選擇兩項。",
+      "options": {
+        "A": "依服務建立網路隔離並限制 east-west 流量",
+        "B": "共用具全域管理權限的單一 service account",
+        "C": "為各服務使用只含必要權限的身分",
+        "D": "所有服務互通且停用驗證以減少延遲"
+      },
+      "answer": "AC",
+      "explanation": "微分隔減少服務之間可達路徑，限制入侵者轉移到其他服務。 個別最小權限身分限制一個服務遭入侵後可存取其他資源的範圍。",
+      "option_explanations": {
+        "A": "微分隔減少服務之間可達路徑，限制入侵者轉移到其他服務。",
+        "B": "共用高權限會使單一服務入侵擴散到多個系統。",
+        "C": "個別最小權限身分限制一個服務遭入侵後可存取其他資源的範圍。",
+        "D": "開放互通與無驗證會增加橫向移動機會。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 3.1",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 3,
+      "objective": "3.2",
+      "category": "3. Security Architecture",
+      "chapter": "3.2",
+      "competency": "zero trust application access",
+      "question_text": "公開網站應放在隔離區，內部資料庫只接受網站伺服器的指定 port，外部用戶端不能直連資料庫。哪種設計最符合？",
+      "options": {
+        "A": "所有主機放在同一 unrestricted zone",
+        "B": "只將資料庫改用不常見 port 而全面公開",
+        "C": "Security zones 搭配必要的區間防火牆規則",
+        "D": "只更改網站 DNS TTL 而不限制連線"
+      },
+      "answer": "C",
+      "explanation": "安全區域分隔公開與內部系統，必要通訊規則限制資料庫可達來源及服務。",
+      "option_explanations": {
+        "A": "同一無限制區域不能建立公開服務與內部資料庫之間的存取邊界。",
+        "B": "不常見 port 不能防止被掃描，仍違反不能外部直連的要求。",
+        "C": "安全區域分隔公開與內部系統，必要通訊規則限制資料庫可達來源及服務。",
+        "D": "DNS TTL 控制快取時間，不會建立來源及目的服務存取規則。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 3.2",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "type": "情境複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 3,
+      "objective": "3.3",
+      "category": "3. Security Architecture",
+      "chapter": "3.3",
+      "competency": "data masking and deidentification",
+      "question_text": "測試團隊需要類似真實資料的欄位格式，但不能取得可識別客戶的內容。哪些方法合適？請選擇兩項。",
+      "options": {
+        "A": "以不含真實個資的 synthetic data 測試",
+        "B": "僅為含真實個資的檔案更改副檔名",
+        "C": "把完整正式資料公開並標註僅供測試",
+        "D": "依需求遮蔽或移除可識別欄位並驗證結果"
+      },
+      "answer": "AD",
+      "explanation": "合成資料可保留需要的結構與格式，避免分發實際客戶資料。 適當 masking 與驗證可降低測試資料直接識別客戶的能力，仍需考慮再識別風險。",
+      "option_explanations": {
+        "A": "合成資料可保留需要的結構與格式，避免分發實際客戶資料。",
+        "B": "改副檔名不會移除敏感內容，不能阻止測試人員讀取個資。",
+        "C": "用途標註不是存取或內容保護，公開正式資料會造成披露。",
+        "D": "適當 masking 與驗證可降低測試資料直接識別客戶的能力，仍需考慮再識別風險。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 3.3",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 3,
+      "objective": "3.4",
+      "category": "3. Security Architecture",
+      "chapter": "3.4",
+      "competency": "failover testing",
+      "question_text": "災難復原演練讓備援環境執行與主站相同的測試工作負載並比對結果，正式服務仍留在主站。這是哪種測試？",
+      "options": {
+        "A": "Full interruption test",
+        "B": "Tabletop exercise",
+        "C": "僅閱讀 checklist",
+        "D": "Parallel processing test"
+      },
+      "answer": "D",
+      "explanation": "平行測試讓備援執行工作負載並比較結果，而正式處理仍保留原站。",
+      "option_explanations": {
+        "A": "完全中斷測試會中止或切離主站正式作業，與題示維持主站服務不同。",
+        "B": "桌上演練以討論情境及角色流程為主，不實際運行兩地工作負載。",
+        "C": "閱讀清單沒有實際運行備援環境及比對處理結果。",
+        "D": "平行測試讓備援執行工作負載並比較結果，而正式處理仍保留原站。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 3.4",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 5,
+      "objective": "5.4",
+      "category": "5. Security Program Management and Oversight",
+      "chapter": "5.4",
+      "competency": "privacy rights",
+      "question_text": "資料主體要求組織刪除已無必要保存的個人資料。此要求最符合哪項隱私權？",
+      "options": {
+        "A": "right to be forgotten",
+        "B": "least privilege",
+        "C": "right to audit",
+        "D": "non-repudiation"
+      },
+      "answer": "A",
+      "explanation": "Right to be forgotten 讓資料主體在符合法定例外時要求刪除不再必要的個人資料；組織仍須檢查法律保留、契約或監管要求後再處理。",
+      "option_explanations": {
+        "A": "正確，直接對應刪除個資的資料主體權利。",
+        "B": "最小權限是存取控制原則。",
+        "C": "right to audit 是合約或稽核權。",
+        "D": "不可否認性是交易證明。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 5.4",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "type": "複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 5,
+      "objective": "5.4",
+      "category": "5. Security Program Management and Oversight",
+      "chapter": "5.4",
+      "competency": "compliance evidence",
+      "question_text": "哪些措施有助於證明員工完成必要的合規訓練？（選兩項）",
+      "options": {
+        "A": "只在口頭會議提過一次",
+        "B": "LMS 完成紀錄與測驗結果",
+        "C": "員工對政策的電子 acknowledgement",
+        "D": "刪除未完成者的紀錄"
+      },
+      "answer": "BC",
+      "explanation": "LMS 可保存完成時間、課程與測驗結果，電子 acknowledgement 可證明人員已閱讀並確認政策；兩者都能提供可稽核的訓練與認知證據。",
+      "option_explanations": {
+        "A": "口頭說明缺少可驗證證據。",
+        "B": "正確，提供可報告的完成與成績資料。",
+        "C": "正確，記錄個人已確認政策。",
+        "D": "刪除紀錄會破壞合規證據。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 5.4",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "type": "情境題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 5,
+      "objective": "5.4",
+      "category": "5. Security Program Management and Oversight",
+      "chapter": "5.4",
+      "competency": "legal hold",
+      "question_text": "公司收到訴訟通知，法務要求保留相關員工郵件，即使一般保存期限已到。安全團隊應如何處理？",
+      "options": {
+        "A": "立即刪除以遵守一般政策",
+        "B": "依 legal hold 暫停相關資料的正常刪除",
+        "C": "把郵件公開給所有員工",
+        "D": "只保留郵件主旨而刪除內容"
+      },
+      "answer": "B",
+      "explanation": "Legal hold 會暫停與案件相關資料的正常處置與覆寫，避免破壞可能的電子證據；範圍應由法務界定並記錄，直到解除保留通知。",
+      "option_explanations": {
+        "A": "一般期限不能覆蓋法務保留要求。",
+        "B": "正確，優先保存受法律程序涵蓋的證據。",
+        "C": "公開資料會造成額外隱私與證據風險。",
+        "D": "刪除內容仍可能破壞證據完整性。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 5.4",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "type": "單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 5,
+      "objective": "5.5",
+      "category": "5. Security Program Management and Oversight",
+      "chapter": "5.5",
+      "competency": "penetration testing knowledge",
+      "question_text": "測試人員只知道目標公司的網域，不知道內部網路或應用細節。這是哪種 penetration test？",
+      "options": {
+        "A": "white box",
+        "B": "grey box",
+        "C": "black box",
+        "D": "整合防禦測試"
+      },
+      "answer": "C",
+      "explanation": "Black-box 測試模擬外部攻擊者，只提供極少初始資訊；white-box 會提供完整設計，grey-box 則提供部分知識。題目只有公開網域，符合 black box。",
+      "option_explanations": {
+        "A": "white box 通常提供完整架構與原始碼。",
+        "B": "grey box 會提供部分內部資訊。",
+        "C": "正確，初始資訊接近外部攻擊者。",
+        "D": "描述測試取向，不是知識程度分類。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 5.5",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "type": "複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 5,
+      "objective": "5.5",
+      "category": "5. Security Program Management and Oversight",
+      "chapter": "5.5",
+      "competency": "audit data gathering",
+      "question_text": "進行控制稽核的 data gathering 時，哪些方法能取得可比較且可追溯的證據？（選兩項）",
+      "options": {
+        "A": "只接受匿名傳聞",
+        "B": "依抽樣計畫檢查代表性紀錄",
+        "C": "不記錄取樣範圍",
+        "D": "訪談控制負責人並保存佐證文件"
+      },
+      "answer": "BD",
+      "explanation": "有設計的 sampling 可在合理成本下評估控制，訪談搭配文件或系統證據則能驗證陳述；記錄範圍與來源讓結果可重現與追溯。",
+      "option_explanations": {
+        "A": "無法確認來源與真實性。",
+        "B": "正確，提供可說明方法與範圍的證據。",
+        "C": "沒有範圍就無法解讀結論。",
+        "D": "正確，將人員陳述與客觀資料交叉驗證。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 5.5",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "type": "情境題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 5,
+      "objective": "5.5",
+      "category": "5. Security Program Management and Oversight",
+      "chapter": "5.5",
+      "competency": "MITRE ATT&CK analysis",
+      "question_text": "調查團隊將觀察到的 PowerShell、憑證傾印與橫向移動對應到攻擊者的戰術與技術，以找出防禦缺口。使用哪種參考來源最適合？",
+      "options": {
+        "A": "RFQ",
+        "B": "SLA",
+        "C": "資料銷毀證明",
+        "D": "MITRE ATT&CK"
+      },
+      "answer": "D",
+      "explanation": "MITRE ATT&CK 將真實攻擊行為映射到戰術與技術，可協助分析覆蓋率、偵測缺口與獵捕假設；RFQ 和 SLA 屬採購或服務合約文件。",
+      "option_explanations": {
+        "A": "RFQ 是詢價文件。",
+        "B": "SLA 定義服務水準。",
+        "C": "銷毀證明是處置證據。",
+        "D": "正確，提供攻擊技術與戰術的共同分類。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 5.5",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        },
+        {
+          "url": "https://attack.mitre.org/",
+          "title": "MITRE ATT&CK",
+          "section": "Adversary tactics and techniques",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 5,
+      "objective": "5.6",
+      "category": "5. Security Program Management and Oversight",
+      "chapter": "5.6",
+      "competency": "security awareness metrics",
+      "question_text": "釣魚演練後要衡量實際安全行為是否改善。哪項指標比投入與活動量更直接？",
+      "options": {
+        "A": "演練點擊率與回報率的趨勢",
+        "B": "年度訓練預算總額",
+        "C": "已寄送演練郵件總數",
+        "D": "製作訓練影片所花的時間"
+      },
+      "answer": "A",
+      "explanation": "點擊及回報率反映員工辨識和通報行為，能追蹤訓練成效。 預算屬投入指標，不能直接證明員工能辨識或通報攻擊。",
+      "option_explanations": {
+        "A": "點擊及回報率反映員工辨識和通報行為，能追蹤訓練成效。",
+        "B": "預算屬投入指標，不能直接證明員工能辨識或通報攻擊。",
+        "C": "寄送數屬活動量，沒有呈現員工如何處理可疑訊息。",
+        "D": "製作工時反映材料投入，不直接測量員工實際安全行為。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 5.6",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "type": "複選題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 5,
+      "objective": "5.6",
+      "category": "5. Security Program Management and Oversight",
+      "chapter": "5.6",
+      "competency": "targeted awareness training",
+      "question_text": "遠端與 BYOD 員工的安全意識課程應涵蓋哪些主題？（選兩項）",
+      "options": {
+        "A": "只講資料中心冷卻",
+        "B": "跳過 BEC 因為使用私人裝置",
+        "C": "安全使用公共 Wi-Fi 與 VPN",
+        "D": "遺失手機的通報與遠端抹除流程"
+      },
+      "answer": "CD",
+      "explanation": "遠端工作需理解不受控網路與 VPN 使用，BYOD 則需知道遺失裝置的通報、MDM 與遠端抹除流程；內容應依人員情境做 targeted training。",
+      "option_explanations": {
+        "A": "與員工日常行為不相稱。",
+        "B": "BEC 仍可能透過私人裝置發生，不能跳過。",
+        "C": "正確，直接降低遠端網路暴露。",
+        "D": "正確，縮短遺失裝置造成的資料風險。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 5.6",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "type": "情境題",
+      "exam_codes": [
+        "SY0-801"
+      ],
+      "domain": 5,
+      "objective": "5.6",
+      "category": "5. Security Program Management and Oversight",
+      "chapter": "5.6",
+      "competency": "corrective awareness training",
+      "question_text": "某部門連續三次把敏感檔案寄到錯誤外部收件者。主管應採取哪種最適當的安全意識措施？",
+      "options": {
+        "A": "取消全公司的所有訓練",
+        "B": "提供針對資料處理與外寄檢查的 corrective training",
+        "C": "公開列出員工姓名羞辱",
+        "D": "允許自動轉寄所有郵件"
+      },
+      "answer": "B",
+      "explanation": "重複行為顯示一般課程不足，應針對該部門提供 corrective training，結合資料分類、DLP 警示與外寄確認，並以後續誤寄率評估是否改善。",
+      "option_explanations": {
+        "A": "會移除必要的安全能力。",
+        "B": "正確，針對已觀察到的行為提供補救教育。",
+        "C": "羞辱不會建立正確流程且可能造成隱私問題。",
+        "D": "自動轉寄會擴大資料外洩。"
+      },
+      "references": [
+        {
+          "title": "CompTIA Security+ SY0-801 Exam Objectives (Version 2.0)",
+          "section": "Objective 5.6",
+          "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+          "accessed": "2026-10-06"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "comptia-security-plus-practice",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "validate": "node scripts/validate-exams.mjs",
+    "test": "node --test && node scripts/validate-exams.mjs"
+  }
+}
