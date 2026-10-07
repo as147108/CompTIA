@@ -1,4 +1,4 @@
-import { EXAM_FILES, VERSIONS } from "./config.js";
+import { EXAM_FILES, VERSIONS } from "./config.js?v=20261007-sets";
 import { isCorrectAnswer, pickQuestionSet, summarizeResults } from "./quiz-engine.js";
 import { getQuestionPool, getQuestionView } from "./question-view.js";
 
