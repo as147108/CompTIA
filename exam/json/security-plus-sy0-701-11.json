@@ -39,28 +39,28 @@
         "D": "Corrective control"
       },
       "answer": "AB",
-      "explanation": "The badge reader enforces access electronically. The guard controls entry to a physical area.",
+      "explanation": "The firewall enforces access decisions through packet-filtering technology. The guard controls entry to a physical area.",
       "option_explanations": {
-        "A": "The badge reader enforces access electronically.",
+        "A": "The firewall enforces access decisions through packet-filtering technology.",
         "B": "The guard controls entry to a physical area.",
         "C": "No cryptographic mechanism is described.",
         "D": "The change adds prevention rather than repairing a failure."
       },
       "translations": {
         "zh-Hant": {
-          "question_text": "醫院的安全計畫要求上鎖櫃、攝影機，以及鑰匙發放的書面程序。哪兩種控制類別存在？選兩項。",
+          "question_text": "醫院部署封鎖未授權連線的防火牆規則，並由警衛控制機房進入。這些措施代表哪些控制類別？選兩項。",
           "options": {
             "A": "技術控制",
             "B": "實體控制",
             "C": "密碼控制",
             "D": "矯正控制"
           },
-          "explanation": "badge reader 以電子方式強制存取。 保全控制實體區域的進入。",
+          "explanation": "防火牆透過封包過濾技術強制執行存取決策。 警衛控制實體區域的進入，屬於實體控制。",
           "option_explanations": {
-            "A": "badge reader 以電子方式強制存取。",
-            "B": "保全控制實體區域的進入。",
-            "C": "沒有描述密碼機制。",
-            "D": "變更增加預防，而不是修復失效。"
+            "A": "防火牆透過封包過濾技術強制執行存取決策。",
+            "B": "警衛控制實體區域的進入，屬於實體控制。",
+            "C": "情境並未描述加密、雜湊或數位簽章機制。",
+            "D": "措施在事件之前阻止未授權存取，而非事後修復。"
           },
           "competency": "考綱 1.1"
         }
@@ -168,7 +168,7 @@
             "A": "聊天訊息缺乏可追責核准與技術驗證。",
             "B": "變更後監看不能取代變更前影響分析。",
             "C": "這些紀錄顯示受影響服務、驗證結果及如何反轉變更。",
-            "D": "screenshot 不顯示相依性、測試成功或復原。"
+            "D": "截圖 不顯示相依性、測試成功或復原。"
           },
           "competency": "考綱 1.3"
         }
@@ -266,17 +266,17 @@
         "zh-Hant": {
           "question_text": "犯罪團體購買遭竊憑證並以勒索為目的攻擊醫院。哪種攻擊者與動機最符合？",
           "options": {
-            "A": "以 financial gain 為目的的 organized crime",
-            "B": "尋求 publicity 的 hacktivists",
-            "C": "尋求練習的 unskilled attackers",
-            "D": "意外 insider"
+            "A": "以 財務利益 為目的的 組織犯罪",
+            "B": "尋求 宣傳曝光 的 駭客行動主義者",
+            "C": "尋求練習的 低技能攻擊者",
+            "D": "意外 內部人員"
           },
           "explanation": "購買存取與勒索是有資金犯罪行動的特徵。",
           "option_explanations": {
             "A": "購買存取與勒索是有資金犯罪行動的特徵。",
             "B": "題幹強調付款，而非政治訊息。",
             "C": "購買存取與協調勒索顯示資源高於單純練習。",
-            "D": "actor 是外部有組織團體，不是意外員工。"
+            "D": "攻擊者 是外部有組織團體，不是意外員工。"
           },
           "competency": "考綱 2.1"
         }
@@ -376,14 +376,14 @@
           "options": {
             "A": "Firmware end-of-life（韌體終止支援）",
             "B": "Jailbreaking（越獄）",
-            "C": "Command injection（命令注入）",
+            "C": "命令 injection（命令注入）",
             "D": "Resource reuse（資源重用）"
           },
-          "explanation": "不可信輸入可改變 shell 解讀的 command。",
+          "explanation": "不可信輸入可改變 shell 解讀的 命令。",
           "option_explanations": {
-            "A": "問題是 command 建構，不是韌體停止支援。",
+            "A": "問題是 命令 建構，不是韌體停止支援。",
             "B": "越獄是行動平台限制問題。",
-            "C": "不可信輸入可改變 shell 解讀的 command。",
+            "C": "不可信輸入可改變 shell 解讀的 命令。",
             "D": "資源重用涉及重新分配資源的殘留資料。"
           },
           "competency": "考綱 2.3"
@@ -426,19 +426,19 @@
       },
       "translations": {
         "zh-Hant": {
-          "question_text": "Web 日誌顯示 5 分鐘內對 /export 發出 900 次 POST，接著向陌生位址回傳 4 GB。哪項指標最令人擔心？",
+          "question_text": "網頁 日誌顯示 5 分鐘內對 /匯出 發出 900 次 POST，接著向陌生位址回傳 4 GB。哪項指標最令人擔心？",
           "options": {
-            "A": "已完成的 patch",
-            "B": "自動化 export 濫用後可能資料外洩",
-            "C": "例行 browser caching",
+            "A": "已完成的 修補程式",
+            "B": "自動化 匯出 濫用後可能資料外洩",
+            "C": "例行 瀏覽器快取",
             "D": "正常時間同步"
           },
           "explanation": "數量與異常目的地顯示自動化存取後發生資料傳輸。",
           "option_explanations": {
-            "A": "patch 紀錄不能解釋觀察到的 web 傳輸。",
+            "A": "修補程式 紀錄不能解釋觀察到的 網頁 傳輸。",
             "B": "數量與異常目的地顯示自動化存取後發生資料傳輸。",
-            "C": "caching 不能解釋重複 POST 與 4 GB 回應。",
-            "D": "時間同步不會產生 export requests 或大量回應。"
+            "C": "快取 不能解釋重複 POST 與 4 GB 回應。",
+            "D": "時間同步不會產生 匯出請求 或大量回應。"
           },
           "competency": "考綱 2.4"
         }
@@ -480,17 +480,17 @@
       },
       "translations": {
         "zh-Hant": {
-          "question_text": "舊式 appliance 在兩天的中斷凍結期間不能修補。哪兩項補償措施最佳？選兩項。",
+          "question_text": "舊式 設備 在兩天的中斷凍結期間不能修補。哪兩項補償措施最佳？選兩項。",
           "options": {
-            "A": "限制只能由 management subnet 存取",
-            "B": "加入 targeted IPS signature 並監看",
-            "C": "公開 management interface",
-            "D": "刪除 appliance 日誌"
+            "A": "限制只能由 管理子網 存取",
+            "B": "加入 針對性的 IPS 特徵規則 並監看",
+            "C": "公開 管理介面",
+            "D": "刪除 設備 日誌"
           },
-          "explanation": "分段降低可觸及未修補裝置的人員範圍。 signature 可阻擋已知模式，監看可偵測嘗試。",
+          "explanation": "分段降低可觸及未修補裝置的人員範圍。 特徵規則 可阻擋已知模式，監看可偵測嘗試。",
           "option_explanations": {
             "A": "分段降低可觸及未修補裝置的人員範圍。",
-            "B": "signature 可阻擋已知模式，監看可偵測嘗試。",
+            "B": "特徵規則 可阻擋已知模式，監看可偵測嘗試。",
             "C": "公開暴露會增加修補延遲期間的風險。",
             "D": "刪除日誌會移除偵測與調查證據。"
           },
@@ -537,15 +537,15 @@
           "question_text": "修補程式關閉回報的 CVE，但服務仍暴露不必要的管理端點。應首先做什麼？",
           "options": {
             "A": "將系統標記為完全修復",
-            "B": "刪除 vulnerability ticket",
-            "C": "停用所有 application logging",
+            "B": "刪除 弱點工單",
+            "C": "停用所有 應用程式日誌記錄",
             "D": "移除或限制端點並驗證暴露面"
           },
           "explanation": "必須降低剩餘暴露，然後獨立確認。",
           "option_explanations": {
             "A": "端點顯示修復尚未完成。",
-            "B": "刪除 ticket 破壞責任追蹤與證據。",
-            "C": "需要 logging 來驗證剩餘暴露。",
+            "B": "刪除 工單 破壞責任追蹤與證據。",
+            "C": "需要 日誌記錄 來驗證剩餘暴露。",
             "D": "必須降低剩餘暴露，然後獨立確認。"
           },
           "competency": "考綱 2.5"
@@ -591,15 +591,15 @@
           "question_text": "薪資資料庫移到應用程式層後方，只有該層可以查詢。最直接改善哪項架構原則？",
           "options": {
             "A": "Single-factor access（單因素存取）",
-            "B": "不受限 east-west traffic",
-            "C": "Segmentation 與 reduced attack surface",
+            "B": "不受限 東西向流量",
+            "C": "分段 與 減少攻擊面",
             "D": "Public exposure（公開暴露）"
           },
-          "explanation": "database zone 被分離，能抵達它的路徑變少。",
+          "explanation": "資料庫區域 被分離，能抵達它的路徑變少。",
           "option_explanations": {
-            "A": "architecture 沒有要求減少驗證因素。",
-            "B": "所述 query path 很窄，不是不受限。",
-            "C": "database zone 被分離，能抵達它的路徑變少。",
+            "A": "架構 沒有要求減少驗證因素。",
+            "B": "所述 查詢路徑 很窄，不是不受限。",
+            "C": "資料庫區域 被分離，能抵達它的路徑變少。",
             "D": "設計移除直接公開可達性。"
           },
           "competency": "考綱 3.1"
@@ -698,16 +698,16 @@
         "zh-Hant": {
           "question_text": "移轉作業為測試建立受管制資料的副本。哪兩項防護措施最佳限制暴露？選兩項。",
           "options": {
-            "A": "複製前 tokenize direct identifiers",
-            "B": "將副本限制給核准 test account",
-            "C": "將原始副本放入 public bucket",
-            "D": "停用 test account audit logging"
+            "A": "複製前 代碼化直接識別資訊",
+            "B": "將副本限制給核准 測試帳號",
+            "C": "將原始副本放入 公開儲存桶",
+            "D": "停用 測試帳號 audit 日誌記錄"
           },
-          "explanation": "tokenization 降低直接識別，同時保留測試關聯。 permission restriction 限制誰可使用暫時副本。",
+          "explanation": "代碼化 降低直接識別，同時保留測試關聯。 權限限制 限制誰可使用暫時副本。",
           "option_explanations": {
-            "A": "tokenization 降低直接識別，同時保留測試關聯。",
-            "B": "permission restriction 限制誰可使用暫時副本。",
-            "C": "public storage 會暴露受管制紀錄。",
+            "A": "代碼化 降低直接識別，同時保留測試關聯。",
+            "B": "權限限制 限制誰可使用暫時副本。",
+            "C": "公開儲存 會暴露受管制紀錄。",
             "D": "停用日誌會移除敏感存取的責任追蹤。"
           },
           "competency": "考綱 3.3"
@@ -752,10 +752,10 @@
         "zh-Hant": {
           "question_text": "復原演練從 18 小時前的快照還原，但要求最多 2 小時資料遺失。哪項指標失敗？",
           "options": {
-            "A": "Recovery time objective（RTO）",
+            "A": "復原 time objective（RTO）",
             "B": "Mean time between failures（MTBF）",
             "C": "Exposure factor（暴露因子）",
-            "D": "Recovery point objective（RPO）"
+            "D": "復原 point objective（RPO）"
           },
           "explanation": "還原點比允許的資料遺失窗口更舊。",
           "option_explanations": {
@@ -809,7 +809,7 @@
             "A": "Cold-site activation（冷站啟用）",
             "B": "Single-node restoration（單節點還原）",
             "C": "Parallel processing（平行處理）",
-            "D": "Tabletop exercise（桌上演練）"
+            "D": "Tabletop 演練（桌上演練）"
           },
           "explanation": "兩個環境處理相同交易並可比較結果。",
           "option_explanations": {
@@ -860,7 +860,7 @@
         "zh-Hant": {
           "question_text": "路由器基準設定仍允許 Telnet，且啟用未使用的管理服務。發布前哪兩項變更最適當？選兩項。",
           "options": {
-            "A": "分享 router administrator password",
+            "A": "分享 router 管理員 password",
             "B": "停用 Telnet 並使用 secure management protocol",
             "C": "停用未使用的 administrative 服務",
             "D": "為相容性啟用所有 legacy services"
@@ -1020,7 +1020,7 @@
       },
       "translations": {
         "zh-Hant": {
-          "question_text": "端點紀錄顯示，陌生 IP 的互動式管理員登入後立即安裝隨機名稱的新服務；服務執行身分可寫入暫存目錄中的未簽署程式。哪項指標最重要？",
+          "question_text": "端點紀錄顯示，陌生 IP 的互動式管理員登入後立刻安裝隨機名稱的新服務；服務執行使用者可寫入的暫存目錄中的未簽署程式。哪項指標最重要？",
           "options": {
             "A": "已記錄修補後的預期服務重新啟動",
             "B": "單純儲存不足造成備份失敗",
@@ -1076,17 +1076,17 @@
         "zh-Hant": {
           "question_text": "DLP 規則阻擋包含專案代碼字詞的檔案，但也阻擋核准的測試資料。哪項變更最佳？",
           "options": {
-            "A": "重新命名每個 test file",
-            "B": "以 classification context 調整 rule 並在部署前測試",
+            "A": "重新命名每個 測試檔案",
+            "B": "以 分類脈絡 調整 規則 並在部署前測試",
             "C": "全域停用 DLP",
-            "D": "忽略未來所有 DLP alerts"
+            "D": "忽略未來所有 DLP 告警"
           },
-          "explanation": "context 降低 false positives，同時保護真正敏感檔案。",
+          "explanation": "脈絡 降低 誤判，同時保護真正敏感檔案。",
           "option_explanations": {
             "A": "單靠檔名不能可靠分類內容。",
-            "B": "context 降低 false positives，同時保護真正敏感檔案。",
+            "B": "脈絡 降低 誤判，同時保護真正敏感檔案。",
             "C": "全域停用會移除保護，而非改善精確度。",
-            "D": "忽略 alerts 會隱藏 true 與 false positives。"
+            "D": "忽略 告警 會隱藏 真實 與 誤判。"
           },
           "competency": "考綱 4.5"
         }
@@ -1128,19 +1128,19 @@
       },
       "translations": {
         "zh-Hant": {
-          "question_text": "員工 09:00 轉部門；HR feed 在 09:05 更新，但 09:20 舊的 finance role 仍存在。應首先改善哪項控制？",
+          "question_text": "員工 09:00 轉部門；HR 資料流 在 09:05 更新，但 09:20 舊的 財務角色 仍存在。應首先改善哪項控制？",
           "options": {
-            "A": "自動 deprovisioning 與 role reconciliation",
-            "B": "更長 password age",
-            "C": "公開 user directory",
+            "A": "自動 撤銷存取 與 角色權限比對調整",
+            "B": "更長 密碼使用期限",
+            "C": "公開 使用者目錄",
             "D": "停用所有 SSO"
           },
-          "explanation": "時間線顯示 identity feed 已變更，但 access removal 未完成。",
+          "explanation": "時間線顯示 身分資料流 已變更，但 存取撤銷 未完成。",
           "option_explanations": {
-            "A": "時間線顯示 identity feed 已變更，但 access removal 未完成。",
-            "B": "password age 不會移除過時部門 role。",
-            "C": "directory 可見性不會強制移除 role。",
-            "D": "停用 SSO 過度，且不修復生命週期 reconciliation。"
+            "A": "時間線顯示 身分資料流 已變更，但 存取撤銷 未完成。",
+            "B": "密碼使用期限 不會移除過時部門 角色。",
+            "C": "目錄 可見性不會強制移除 角色。",
+            "D": "停用 SSO 過度，且不修復生命週期 權限比對調整。"
           },
           "competency": "考綱 4.6"
         }
@@ -1182,19 +1182,19 @@
       },
       "translations": {
         "zh-Hant": {
-          "question_text": "管線自動套用安全基準，但驗證失敗仍將工作標為成功。哪個 guardrail 最佳？",
+          "question_text": "管線自動套用安全基準，但驗證失敗仍將工作標為成功。哪個 保障措施 最佳？",
           "options": {
-            "A": "從 pipeline 移除 validation",
-            "B": "允許靜默 manual overrides",
-            "C": "無限重跑相同失敗 job",
-            "D": "讓 validation 成為 blocking gate 並保留可稽核 failure path"
+            "A": "從 流程管線 移除 驗證",
+            "B": "允許靜默 人工覆寫",
+            "C": "無限重跑相同失敗 工作",
+            "D": "讓 驗證 成為 阻擋閘門 並保留可稽核 失敗處理路徑"
           },
-          "explanation": "baseline check 失敗時 pipeline 必須停止 promotion。",
+          "explanation": "基準檢查 失敗時 流程管線 必須停止 向後續環境發布。",
           "option_explanations": {
-            "A": "移除 validation 會隱藏 drift 並削弱 baseline。",
-            "B": "靜默 bypass 破壞可重複 enforcement 與可稽核性。",
-            "C": "重試不修復 failed gate，也不解釋例外。",
-            "D": "baseline check 失敗時 pipeline 必須停止 promotion。"
+            "A": "移除 驗證 會隱藏 配置漂移 並削弱 基準。",
+            "B": "靜默 繞過 破壞可重複 強制執行 與可稽核性。",
+            "C": "重試不修復 失敗的閘門，也不解釋例外。",
+            "D": "基準檢查 失敗時 流程管線 必須停止 向後續環境發布。"
           },
           "competency": "考綱 4.7"
         }
@@ -1238,17 +1238,17 @@
         "zh-Hant": {
           "question_text": "11:02 端點警報發出、11:08 主機被隔離、11:15 第二台主機出現相同雜湊。接下來應做什麼？",
           "options": {
-            "A": "不收集 artifacts 直接重建兩台 host",
+            "A": "不收集 調查跡證 直接重建兩台 主機",
             "B": "立即從最舊備份還原",
-            "C": "在 eradication 前擴大範圍分析並保存證據",
-            "D": "隔離一台 host 後關閉事件"
+            "C": "在 根除 前擴大範圍分析並保存證據",
+            "D": "隔離一台 主機 後關閉事件"
           },
-          "explanation": "第二台 host 顯示可能擴散，需要協調分析。",
+          "explanation": "第二台 主機 顯示可能擴散，需要協調分析。",
           "option_explanations": {
-            "A": "重建可能破壞 root-cause analysis 所需證據。",
-            "B": "在理解範圍與 persistence 前 recovery 過早。",
-            "C": "第二台 host 顯示可能擴散，需要協調分析。",
-            "D": "第二台相同 host 顯示 containment 不完整。"
+            "A": "重建可能破壞 根本原因分析 所需證據。",
+            "B": "在理解範圍與 持續性 前 復原 過早。",
+            "C": "第二台 主機 顯示可能擴散，需要協調分析。",
+            "D": "第二台受影響主機 顯示 圍堵 不完整。"
           },
           "competency": "考綱 4.8"
         }
@@ -1299,15 +1299,15 @@
           "question_text": "案件有端點程序樹、DNS 日誌與防火牆日誌。程序 13:00 啟動、DNS 查詢在 13:01、對外連線在 13:02。哪兩種來源應首先關聯？選兩項。",
           "options": {
             "A": "沒有事件時間戳的目前資產清單匯出",
-            "B": "端點程序 tree",
-            "C": "DNS 與 firewall 日誌",
+            "B": "端點程序 樹",
+            "C": "DNS 與 防火牆 日誌",
             "D": "年度弱點掃描摘要"
           },
-          "explanation": "它識別啟動可疑序列的程序。 兩者共同連結名稱解析、目的地與 outbound 時間。",
+          "explanation": "它識別啟動可疑序列的程序。 兩者共同連結名稱解析、目的地與 對外連線 時間。",
           "option_explanations": {
             "A": "清單識別資產，不能建立程序至網路事件的順序。",
             "B": "它識別啟動可疑序列的程序。",
-            "C": "兩者共同連結名稱解析、目的地與 outbound 時間。",
+            "C": "兩者共同連結名稱解析、目的地與 對外連線 時間。",
             "D": "外露摘要不顯示特定程序、查詢與連線時間線。"
           },
           "competency": "考綱 4.9"
@@ -1358,17 +1358,17 @@
         "zh-Hant": {
           "question_text": "新法規要求資料擁有權、保存期限與外洩回報的證據。哪項治理行動應首先採取且最佳？",
           "options": {
-            "A": "更新政策 roles 與 procedures，然後指定 accountable owners",
+            "A": "更新政策 角色 與 程序，然後指定 責任負責人",
             "B": "等事件發生後才變更政策",
-            "C": "刪除舊 retention records",
-            "D": "讓每個 team 自訂不同 breach 程序"
+            "C": "刪除舊 保存紀錄",
+            "D": "讓每個 團隊 自訂不同 外洩通報 程序"
           },
-          "explanation": "治理必須先定義責任與 ownership，才能一致產生證據。",
+          "explanation": "治理必須先定義責任與 權責歸屬，才能一致產生證據。",
           "option_explanations": {
-            "A": "治理必須先定義責任與 ownership，才能一致產生證據。",
+            "A": "治理必須先定義責任與 權責歸屬，才能一致產生證據。",
             "B": "等待會讓要求處於未管理狀態。",
             "C": "刪除會移除證據，不是實施治理。",
-            "D": "不一致 procedures 會削弱全組織治理。"
+            "D": "不一致 程序 會削弱全組織治理。"
           },
           "competency": "考綱 5.1"
         }
@@ -1412,17 +1412,17 @@
         "zh-Hant": {
           "question_text": "風險登錄表列出高衝擊服務、風險負責人與處置期限。這展示哪項風險流程元素？",
           "options": {
-            "A": "只有 risk transfer",
-            "B": "只有 risk acceptance",
-            "C": "password reset 程序",
-            "D": "Risk identification、ownership 與 treatment tracking"
+            "A": "只有 風險轉移",
+            "B": "只有 風險接受",
+            "C": "密碼重設 程序",
+            "D": "風險識別、權責歸屬 與 處置追蹤"
           },
-          "explanation": "register 記錄暴露、負責負責人與計畫回應。",
+          "explanation": "登錄表 記錄暴露、責任負責人與計畫回應。",
           "option_explanations": {
             "A": "沒有顯示保險或第三方承擔風險。",
-            "B": "treatment deadline 本身不等於核准保留風險。",
-            "C": "紀錄涉及服務 risk，不是 password lifecycle。",
-            "D": "register 記錄暴露、負責負責人與計畫回應。"
+            "B": "處置期限 本身不等於核准保留風險。",
+            "C": "紀錄涉及服務 風險，不是 密碼生命週期。",
+            "D": "登錄表 記錄暴露、責任負責人與計畫回應。"
           },
           "competency": "考綱 5.2"
         }
@@ -1466,17 +1466,17 @@
         "zh-Hant": {
           "question_text": "託管服務商無法達到合約要求的復原時間。續約前最佳的行動是什麼？",
           "options": {
-            "A": "刪除 recovery requirement",
-            "B": "公開供應商 internal credentials",
-            "C": "記錄 gap、評估衝擊，並重新談判或選 provider",
-            "D": "因供應商熟悉而忽略 metric"
+            "A": "刪除 復原 requirement",
+            "B": "公開供應商 內部憑證",
+            "C": "記錄 缺口、評估衝擊，並重新談判或選 供應商",
+            "D": "因供應商熟悉而忽略 指標"
           },
           "explanation": "組織需要對未達服務風險採取可追責處置。",
           "option_explanations": {
             "A": "刪除要求會隱藏風險，而不是處理它。",
-            "B": "揭露憑證不安全，也與 recovery performance 無關。",
+            "B": "揭露憑證不安全，也與 復原 performance 無關。",
             "C": "組織需要對未達服務風險採取可追責處置。",
-            "D": "熟悉不會移除合約 recovery risk。"
+            "D": "熟悉不會移除合約 復原 風險。"
           },
           "competency": "考綱 5.3"
         }
@@ -1520,16 +1520,16 @@
         "zh-Hant": {
           "question_text": "稽核發現客戶資料保存 400 天，但政策要求 90 天。哪項合規回應最適當？",
           "options": {
-            "A": "停用 data inventory",
-            "B": "調查原因、執行 retention，並記錄 corrective 措施",
-            "C": "刪除所有 audit evidence",
-            "D": "未核准就將 retention 延長至 400 天"
+            "A": "停用 資料清單",
+            "B": "調查原因、執行 保存期限，並記錄 矯正 措施",
+            "C": "刪除所有 稽核證據",
+            "D": "未核准就將 保存期限 延長至 400 天"
           },
-          "explanation": "回應處理 gap、證據與防止再發。",
+          "explanation": "回應處理 缺口、證據與防止再發。",
           "option_explanations": {
-            "A": "移除 inventory 會降低 retention gap 的可見性。",
-            "B": "回應處理 gap、證據與防止再發。",
-            "C": "刪除證據會惡化責任追蹤，也不修正 retention。",
+            "A": "移除 inventory 會降低 保存期限 缺口 的可見性。",
+            "B": "回應處理 缺口、證據與防止再發。",
+            "C": "刪除證據會惡化責任追蹤，也不修正 保存期限。",
             "D": "未受控實務不應在未核准下改成政策。"
           },
           "competency": "考綱 5.4"
@@ -1574,17 +1574,17 @@
         "zh-Hant": {
           "question_text": "評估人員從完整季度選取紀錄、保留選樣方法，並向稽核委員會報告例外。什麼使證據具可辯護性？",
           "options": {
-            "A": "文件化 scope、可重複 sampling 與回報 exceptions",
-            "B": "一名 administrator 的口頭說法",
-            "C": "沒有期間的未簽署 screenshot",
-            "D": "已刪除的 exception list"
+            "A": "文件化 範圍、可重複 抽樣 與回報 例外",
+            "B": "一名 管理員 的口頭說法",
+            "C": "沒有期間的未簽署 截圖",
+            "D": "已刪除的 例外清單"
           },
-          "explanation": "這些元素讓 reviewers 評估涵蓋率、方法與觀察到的 gaps。",
+          "explanation": "這些元素讓 審查人員 評估涵蓋率、方法與觀察到的 缺口。",
           "option_explanations": {
-            "A": "這些元素讓 reviewers 評估涵蓋率、方法與觀察到的 gaps。",
+            "A": "這些元素讓 審查人員 評估涵蓋率、方法與觀察到的 缺口。",
             "B": "口頭說法缺乏可重現證據。",
-            "C": "它不能建立 scope 或時間涵蓋。",
-            "D": "刪除 exceptions 會阻止獨立 review。"
+            "C": "它不能建立 範圍 或時間涵蓋。",
+            "D": "刪除 例外 會阻止獨立 審查。"
           },
           "competency": "考綱 5.5"
         }
@@ -1628,17 +1628,17 @@
         "zh-Hant": {
           "question_text": "員工反覆未經獨立驗證就核准緊急的供應商銀行帳戶變更。哪項安全意識活動最佳？",
           "options": {
-            "A": "一般 screen-lock 海報",
+            "A": "一般 螢幕鎖定 海報",
             "B": "公開點名失敗員工",
-            "C": "移除所有員工 purchasing access",
-            "D": "針對 BEC 的 callback verification exercise"
+            "C": "移除所有員工 採購存取權",
+            "D": "針對 BEC 的 回撥驗證演練"
           },
-          "explanation": "exercise 演練觀察到的工作流程中缺少的確切行為。",
+          "explanation": "演練 演練觀察到的工作流程中缺少的確切行為。",
           "option_explanations": {
-            "A": "螢幕鎖定不教導 payment-變更 verification。",
+            "A": "螢幕鎖定不教導 付款變更驗證。",
             "B": "公開羞辱不會建立可靠驗證習慣。",
-            "C": "移除存取是營運限制，不是安全意識 practice。",
-            "D": "exercise 演練觀察到的工作流程中缺少的確切行為。"
+            "C": "移除存取是營運限制，不是安全意識 練習。",
+            "D": "演練 演練觀察到的工作流程中缺少的確切行為。"
           },
           "competency": "考綱 5.6"
         }
