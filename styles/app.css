@@ -699,6 +699,11 @@ button:focus-visible {
 }
 
 .version-tag { background: var(--primary-soft); color: var(--primary-strong); }
+.language-actions { display: flex; align-items: center; gap: 12px; margin: 12px 0; flex-wrap: wrap; }
+.language-actions .btn { padding: 8px 14px; }
+#languageStatus { color: var(--muted); font-size: .88rem; }
+#setSelect { width: 100%; }
+.question h2, .review-item-title { white-space: pre-line; }
 .domain-label, .selection-hint, .score-note { color: var(--muted); margin-bottom: 12px; font-size: .92rem; }
 .selection-hint { margin-bottom: 10px; }
 .option-reasons { margin: 14px 0; padding-left: 22px; }

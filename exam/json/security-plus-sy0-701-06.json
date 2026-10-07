@@ -1,0 +1,1662 @@
+{
+  "metadata": {
+    "exam_name": "Security+ SY0-701 Practice Set 06",
+    "set_id": "06",
+    "set_title": "Network isolation and resilient operations",
+    "subject": "CompTIA Security+",
+    "date": "2026-10-07",
+    "exam_code": "SY0-701",
+    "language": "en",
+    "question_count": 30,
+    "domain_distribution": {
+      "1": 4,
+      "2": 7,
+      "3": 5,
+      "4": 8,
+      "5": 6
+    },
+    "content_type": "original-practice",
+    "objectives_url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+    "objectives_version": "6.0"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 4,
+      "objective": "4.5",
+      "category": "4. Security Operations",
+      "chapter": "4.5",
+      "competency": "Objective 4.5",
+      "question_text": "A branch firewall must isolate a payment VLAN. Which FIRST change best limits traffic while preserving the documented HTTPS dependency?",
+      "options": {
+        "A": "Allow only the payment application subnet to the required HTTPS destination",
+        "B": "Allow any internal host to every port",
+        "C": "Disable the firewall during testing",
+        "D": "Permit all Internet traffic to the VLAN"
+      },
+      "answer": "A",
+      "explanation": "This applies least privilege to source, destination, and service.",
+      "option_explanations": {
+        "A": "This applies least privilege to source, destination, and service.",
+        "B": "This leaves the VLAN broadly reachable.",
+        "C": "Disabling the control does not isolate the VLAN.",
+        "D": "This expands rather than limits exposure."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "分支防火牆必須隔離付款 VLAN。為保留已文件化的 HTTPS 相依性，哪項首先變更最能限制流量？",
+          "options": {
+            "A": "只允許付款應用程式子網路連到必要 HTTPS 目的地",
+            "B": "允許所有內部主機連到所有連接埠",
+            "C": "測試期間停用防火牆",
+            "D": "允許所有 Internet 流量進入 VLAN"
+          },
+          "explanation": "這將最小權限套用到來源、目的地與服務。",
+          "option_explanations": {
+            "A": "這將最小權限套用到來源、目的地與服務。",
+            "B": "這會讓 VLAN 維持廣泛可達。",
+            "C": "停用控制無法隔離 VLAN。",
+            "D": "這會擴大而非限制暴露面。"
+          },
+          "competency": "考綱 4.5"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 4.5",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 4,
+      "objective": "4.5",
+      "category": "4. Security Operations",
+      "chapter": "4.5",
+      "competency": "Objective 4.5",
+      "question_text": "A contractor needs SSH access to one jump host for two hours. Which control BEST enforces the stated limit?",
+      "options": {
+        "A": "A permanent any-to-any allow rule",
+        "B": "A DNS alias for the jump host",
+        "C": "A longer password expiration period",
+        "D": "A time-bound ACL scoped to the contractor source and jump-host port"
+      },
+      "answer": "D",
+      "explanation": "The rule limits identity context, source, destination, and duration.",
+      "option_explanations": {
+        "A": "It provides no scope or duration constraint.",
+        "B": "A name alias does not enforce network access.",
+        "C": "Password lifetime does not grant scoped network access.",
+        "D": "The rule limits identity context, source, destination, and duration."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "承包商需要兩小時 SSH 存取一台跳板機。哪項控制最能執行這項限制？",
+          "options": {
+            "A": "永久 any-to-any allow 規則",
+            "B": "跳板機的 DNS 別名",
+            "C": "延長密碼到期期間",
+            "D": "依承包商來源與跳板機連接埠設定限時 ACL"
+          },
+          "explanation": "此規則限制身分情境、來源、目的地與時間。",
+          "option_explanations": {
+            "A": "它沒有範圍或時間限制。",
+            "B": "名稱別名不會執行網路存取控制。",
+            "C": "密碼壽命不會授予範圍化網路存取。",
+            "D": "此規則限制身分情境、來源、目的地與時間。"
+          },
+          "competency": "考綱 4.5"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 4.5",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 4,
+      "objective": "4.5",
+      "category": "4. Security Operations",
+      "chapter": "4.5",
+      "competency": "Objective 4.5",
+      "question_text": "A firewall rule set uses first-match logic. Which change should an analyst make FIRST after finding an any-to-any allow above a database deny?",
+      "options": {
+        "A": "Rename the database object",
+        "B": "Disable logging for the allow rule",
+        "C": "Move the specific database deny before the broad allow and test the resulting path",
+        "D": "Add another deny below the existing allow"
+      },
+      "answer": "C",
+      "explanation": "The specific rule must be evaluated before the broad match.",
+      "option_explanations": {
+        "A": "Renaming does not change rule order.",
+        "B": "Logging does not change enforcement.",
+        "C": "The specific rule must be evaluated before the broad match.",
+        "D": "First-match processing still reaches the earlier allow first."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "防火牆規則採 first-match。分析師發現 any-to-any allow 在資料庫 deny 之前，應首先做哪項變更？",
+          "options": {
+            "A": "重新命名資料庫物件",
+            "B": "停用 allow 規則的記錄",
+            "C": "將特定資料庫 deny 移到廣泛 allow 前並測試流量路徑",
+            "D": "在現有 allow 下方再加 deny"
+          },
+          "explanation": "特定規則必須先於廣泛匹配被評估。",
+          "option_explanations": {
+            "A": "重新命名不會改變規則順序。",
+            "B": "記錄設定不會改變執行結果。",
+            "C": "特定規則必須先於廣泛匹配被評估。",
+            "D": "first-match 仍會先命中前面的 allow。"
+          },
+          "competency": "考綱 4.5"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 4.5",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 4,
+      "objective": "4.6",
+      "category": "4. Security Operations",
+      "chapter": "4.6",
+      "competency": "Objective 4.6",
+      "question_text": "A departing employee still has a valid SSO session on a managed laptop. What is the FIRST IAM action?",
+      "options": {
+        "A": "Keep the SSO session active until the password expires",
+        "B": "Disable the identity and revoke active sessions through the IdP",
+        "C": "Delete the laptop inventory record",
+        "D": "Change only the laptop local password"
+      },
+      "answer": "B",
+      "explanation": "Disabling the identity and revoking sessions removes current access.",
+      "option_explanations": {
+        "A": "An active session can continue access after departure.",
+        "B": "Disabling the identity and revoking sessions removes current access.",
+        "C": "Inventory removal does not revoke an identity or its sessions.",
+        "D": "A local password change does not revoke an existing cloud SSO session at the IdP."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "離職員工在受管筆電上仍有有效 SSO session。首先 IAM 行動是什麼？",
+          "options": {
+            "A": "讓 SSO session 維持到密碼到期",
+            "B": "停用身分並透過 IdP 撤銷有效 session",
+            "C": "刪除筆電資產清冊記錄",
+            "D": "只變更筆電本機密碼"
+          },
+          "explanation": "停用身分並撤銷 session 可移除目前存取。",
+          "option_explanations": {
+            "A": "離職後有效 session 可能繼續提供存取。",
+            "B": "停用身分並撤銷 session 可移除目前存取。",
+            "C": "移除資產清冊不會撤銷身分或 session。",
+            "D": "本機密碼變更並不在 IdP 撤銷既有雲端 SSO 工作階段。"
+          },
+          "competency": "考綱 4.6"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 4.6",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 1,
+      "objective": "1.2",
+      "category": "1. General Security Concepts",
+      "chapter": "1.2",
+      "competency": "Objective 1.2",
+      "question_text": "A policy engine evaluates device health and user context before access. Which Zero Trust principle does this illustrate?",
+      "options": {
+        "A": "Make an access decision using explicit, continuously evaluated context",
+        "B": "Trust every internal address by default",
+        "C": "Grant access permanently after one login",
+        "D": "Use a shared administrator identity"
+      },
+      "answer": "A",
+      "explanation": "The decision is based on context rather than network location alone.",
+      "option_explanations": {
+        "A": "The decision is based on context rather than network location alone.",
+        "B": "This contradicts continuous verification.",
+        "C": "Permanent trust violates the stated principle.",
+        "D": "A shared identity removes accountable context."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "Policy engine 在存取前評估裝置健康狀態與使用者情境。這說明哪個 Zero Trust 原則？",
+          "options": {
+            "A": "使用明確且持續評估的情境作成存取決策",
+            "B": "預設信任所有內部位址",
+            "C": "一次登入後永久授予存取",
+            "D": "使用共用管理員身分"
+          },
+          "explanation": "決策根據情境，而非只根據網路位置。",
+          "option_explanations": {
+            "A": "決策根據情境，而非只根據網路位置。",
+            "B": "這與持續驗證相矛盾。",
+            "C": "永久信任違反題述原則。",
+            "D": "共用身分會移除可追蹤情境。"
+          },
+          "competency": "考綱 1.2"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 1.2",
+          "accessed": "2026-10-07"
+        },
+        {
+          "title": "NIST SP 800-207 — Zero Trust Architecture",
+          "url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+          "section": "Zero Trust tenets and access decisions",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 1,
+      "objective": "1.3",
+      "category": "1. General Security Concepts",
+      "chapter": "1.3",
+      "competency": "Objective 1.3",
+      "question_text": "A production certificate rotation may break three clients that pin the current issuer. Which evidence should the CAB require before approval?",
+      "options": {
+        "A": "A successful scan of the certificate file for malware",
+        "B": "The issuing CA public marketing statement alone",
+        "C": "A certificate-expiration report with no client testing",
+        "D": "Compatibility test results for each client and a tested backout plan"
+      },
+      "answer": "D",
+      "explanation": "Testing the affected dependencies and recovery steps addresses the specific change risk.",
+      "option_explanations": {
+        "A": "A clean file does not demonstrate client trust-chain compatibility or a recovery path.",
+        "B": "The statement does not test the specific pinned clients or support rollback.",
+        "C": "Expiration status does not establish compatibility with a newly pinned issuer.",
+        "D": "Testing the affected dependencies and recovery steps addresses the specific change risk."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "正式環境憑證輪替可能影響三個釘選現有發行者的用戶端。CAB 核准前應要求哪種證據？",
+          "options": {
+            "A": "憑證檔案惡意軟體掃描成功",
+            "B": "僅發行 CA 的公開行銷聲明",
+            "C": "没有用戶端測試的憑證到期報告",
+            "D": "每個用戶端的相容測試結果與經測試的回復計畫"
+          },
+          "explanation": "測試受影響相依性與復原步驟，可處理特定變更風險。",
+          "option_explanations": {
+            "A": "檔案未含惡意軟體不能證明用戶端信任鏈相容或復原路徑。",
+            "B": "聲明沒有測試特定釘選用戶端，也不支持回復。",
+            "C": "到期狀態無法證明與新釘選發行者相容。",
+            "D": "測試受影響相依性與復原步驟，可處理特定變更風險。"
+          },
+          "competency": "考綱 1.3"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 1.3",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 2,
+      "objective": "2.4",
+      "category": "2. Threats, Vulnerabilities, and Mitigations",
+      "chapter": "2.4",
+      "competency": "Objective 2.4",
+      "question_text": "An endpoint sends DNS queries to a rare domain every 60 seconds and then uploads small encrypted bursts. What indicator should the analyst prioritize?",
+      "options": {
+        "A": "A one-time software-update download verified against an approved manifest",
+        "B": "Only a DNS TTL expiry causing a cache refresh",
+        "C": "Periodic beaconing followed by possible command-and-control transfer",
+        "D": "A normal DHCP lease renewal"
+      },
+      "answer": "C",
+      "explanation": "The timing and follow-on encrypted bursts form a correlated indicator.",
+      "option_explanations": {
+        "A": "A verified one-time download does not match rare-domain periodic callbacks followed by repeated uploads.",
+        "B": "TTL refresh may explain DNS timing alone but not the related outbound bursts to a rare destination.",
+        "C": "The timing and follow-on encrypted bursts form a correlated indicator.",
+        "D": "DHCP renewal does not explain periodic rare-domain callbacks."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "端點每 60 秒向罕見網域發出 DNS 查詢，接著上傳小段加密流量。分析師應優先處理哪個指標？",
+          "options": {
+            "A": "依核准清單驗證的一次性軟體更新下載",
+            "B": "僅 DNS TTL 到期造成快取更新",
+            "C": "週期性 beaconing 後疑似命令與控制傳輸",
+            "D": "正常 DHCP 租約更新"
+          },
+          "explanation": "時間規律與後續加密流量構成關聯指標。",
+          "option_explanations": {
+            "A": "經驗證的一次性下載不符合罕見網域定時回連並重複上傳的模式。",
+            "B": "TTL 更新可能解釋 DNS 時序，但不能解釋向罕見目的地發送相關突發流量。",
+            "C": "時間規律與後續加密流量構成關聯指標。",
+            "D": "DHCP 更新無法解釋週期性罕見網域回呼。"
+          },
+          "competency": "考綱 2.4"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 2.4",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 2,
+      "objective": "2.4",
+      "category": "2. Threats, Vulnerabilities, and Mitigations",
+      "chapter": "2.4",
+      "competency": "Objective 2.4",
+      "question_text": "A SIEM shows 400 failed logins across 120 accounts from one ASN, followed by one success. Which FIRST action is most appropriate?",
+      "options": {
+        "A": "Delete the ASN from the SIEM",
+        "B": "Contain the source pattern and investigate the successful account for password spraying",
+        "C": "Reset every employee’s password without preserving logs",
+        "D": "Ignore the event because one login succeeded"
+      },
+      "answer": "B",
+      "explanation": "The broad failures and one success warrant containment and account investigation.",
+      "option_explanations": {
+        "A": "Deleting telemetry prevents investigation.",
+        "B": "The broad failures and one success warrant containment and account investigation.",
+        "C": "This destroys context and exceeds the observed scope.",
+        "D": "A success after distributed failures may confirm compromise."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "SIEM 顯示來自同一 ASN 對 120 個帳號的 400 次失敗登入，之後成功一次。首先應採取什麼行動？",
+          "options": {
+            "A": "從 SIEM 刪除 ASN",
+            "B": "遏止來源模式並調查成功登入的帳號是否遭 password spraying",
+            "C": "不保留記錄而重設所有員工密碼",
+            "D": "因一次成功登入而忽略事件"
+          },
+          "explanation": "大量失敗與一次成功需要遏止並調查帳號。",
+          "option_explanations": {
+            "A": "刪除遙測資料會阻礙調查。",
+            "B": "大量失敗與一次成功需要遏止並調查帳號。",
+            "C": "這會破壞情境並超出觀察範圍。",
+            "D": "分散失敗後的成功可能確認入侵。"
+          },
+          "competency": "考綱 2.4"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 2.4",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 2,
+      "objective": "2.5",
+      "category": "2. Threats, Vulnerabilities, and Mitigations",
+      "chapter": "2.5",
+      "competency": "Objective 2.5",
+      "question_text": "A web server exposes an obsolete admin port to the Internet. Which mitigation MOST directly reduces exploitability while a replacement is scheduled?",
+      "options": {
+        "A": "Restrict the port to the management subnet and require the jump host",
+        "B": "Rename the port in documentation",
+        "C": "Increase the session timeout on the administration service",
+        "D": "Publish the port in a public inventory"
+      },
+      "answer": "A",
+      "explanation": "Reducing reachable sources and adding a controlled path lowers exposure.",
+      "option_explanations": {
+        "A": "Reducing reachable sources and adding a controlled path lowers exposure.",
+        "B": "Documentation does not change network reachability.",
+        "C": "Longer sessions do not reduce which sources can reach the obsolete service.",
+        "D": "Public disclosure increases attacker information."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "Web server 將過時管理連接埠暴露於 Internet。替代系統排程中，哪項 mitigation 最直接降低可利用性？",
+          "options": {
+            "A": "將連接埠限制至管理子網路並要求經跳板機",
+            "B": "在文件中重新命名連接埠",
+            "C": "增加管理服務的工作階段逾時",
+            "D": "在公開清冊公布連接埠"
+          },
+          "explanation": "減少可達來源並加入受控路徑可降低暴露。",
+          "option_explanations": {
+            "A": "減少可達來源並加入受控路徑可降低暴露。",
+            "B": "文件不會改變網路可達性。",
+            "C": "延長工作階段不會減少可到達過時服務的來源。",
+            "D": "公開資訊會增加攻擊者情報。"
+          },
+          "competency": "考綱 2.5"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 2.5",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 4,
+      "objective": "4.8",
+      "category": "4. Security Operations",
+      "chapter": "4.8",
+      "competency": "Objective 4.8",
+      "question_text": "A compromised host is isolated, but the team needs RAM contents before shutdown. Which FIRST forensic action is appropriate?",
+      "options": {
+        "A": "Reboot immediately to clear malware",
+        "B": "Edit the disk image before acquiring RAM",
+        "C": "Publish the host image to the incident channel",
+        "D": "Acquire volatile memory using an approved tool and document chain of custody"
+      },
+      "answer": "D",
+      "explanation": "Memory may disappear at shutdown, so acquisition and custody records come first.",
+      "option_explanations": {
+        "A": "Rebooting destroys volatile evidence.",
+        "B": "Editing evidence before acquisition breaks integrity.",
+        "C": "Public distribution risks evidence and sensitive data.",
+        "D": "Memory may disappear at shutdown, so acquisition and custody records come first."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "受害主機已隔離，但團隊需要關機前的 RAM 內容。首先應採取哪項鑑識行動？",
+          "options": {
+            "A": "立即重新開機清除惡意程式",
+            "B": "先編輯磁碟映像再擷取 RAM",
+            "C": "將主機映像公布到事件頻道",
+            "D": "使用核准工具擷取易失記憶體並記錄 chain of custody"
+          },
+          "explanation": "記憶體可能在關機時消失，因此先擷取並記錄保管鏈。",
+          "option_explanations": {
+            "A": "重新開機會破壞易失證據。",
+            "B": "在擷取前編輯證據會破壞完整性。",
+            "C": "公開散布會危及證據與敏感資料。",
+            "D": "記憶體可能在關機時消失，因此先擷取並記錄保管鏈。"
+          },
+          "competency": "考綱 4.8"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 4.8",
+          "accessed": "2026-10-07"
+        },
+        {
+          "title": "NIST SP 800-86 — Integrating Forensic Techniques into Incident Response",
+          "url": "https://csrc.nist.gov/pubs/sp/800/86/final",
+          "section": "Data collection, integrity, and evidence handling",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 4,
+      "objective": "4.9",
+      "category": "4. Security Operations",
+      "chapter": "4.9",
+      "competency": "Objective 4.9",
+      "question_text": "A packet capture shows repeated outbound TLS connections, while firewall logs show only allowed destinations. Which additional source BEST identifies the process creating the connections?",
+      "options": {
+        "A": "A DNS query log showing the destination domain only",
+        "B": "A firewall flow record without endpoint process data",
+        "C": "Endpoint process telemetry correlated by timestamp and destination",
+        "D": "A physical-access badge report"
+      },
+      "answer": "C",
+      "explanation": "Endpoint telemetry can map the connection to a process and user.",
+      "option_explanations": {
+        "A": "A domain alone does not identify the process creating the TLS session.",
+        "B": "Flow metadata lacks the local process identity.",
+        "C": "Endpoint telemetry can map the connection to a process and user.",
+        "D": "Physical access does not identify the network process."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "封包擷取顯示反覆對外 TLS 連線，而防火牆只記錄允許的目的地。哪項額外資料最能找出建立連線的程序？",
+          "options": {
+            "A": "只顯示目的網域的 DNS 查詢日誌",
+            "B": "沒有端點程序資料的防火牆 flow record",
+            "C": "依時間戳與目的地關聯的端點程序遙測",
+            "D": "實體門禁卡報告"
+          },
+          "explanation": "端點遙測可將連線對應到程序與使用者。",
+          "option_explanations": {
+            "A": "只有網域無法識別建立 TLS session 的程序。",
+            "B": "Flow metadata 缺少本機程序身分。",
+            "C": "端點遙測可將連線對應到程序與使用者。",
+            "D": "實體進出無法識別網路程序。"
+          },
+          "competency": "考綱 4.9"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 4.9",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 4,
+      "objective": "4.9",
+      "category": "4. Security Operations",
+      "chapter": "4.9",
+      "competency": "Objective 4.9",
+      "question_text": "A firewall records an outbound session to 203.0.113.9 at 02:14. An endpoint reports a suspicious process near that time. Which firewall fields BEST allow the analyst to link the events?",
+      "options": {
+        "A": "The destination domain alone",
+        "B": "Source and destination addresses, ports, and timestamp",
+        "C": "The firewall appliance asset owner",
+        "D": "The password policy applied to administrators"
+      },
+      "answer": "B",
+      "explanation": "The session tuple and time connect the network event to matching endpoint connection telemetry.",
+      "option_explanations": {
+        "A": "A domain alone cannot identify the source host or align the specific session in time.",
+        "B": "The session tuple and time connect the network event to matching endpoint connection telemetry.",
+        "C": "Ownership information identifies accountability, not the host and session responsible for this connection.",
+        "D": "A password policy gives authentication requirements rather than evidence of this outbound session."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "防火牆在 02:14 記錄連向 203.0.113.9 的工作階段，端點在相近時間回報可疑程序。哪些防火牆欄位最適合關聯這些事件？",
+          "options": {
+            "A": "僅目的網域",
+            "B": "來源與目的位址、埠號及時間戳",
+            "C": "防火牆設備的資產負責人",
+            "D": "套用於管理員的密碼政策"
+          },
+          "explanation": "連線組合及時間可將網路事件連至相符端點連線遙測。",
+          "option_explanations": {
+            "A": "僅網域無法識別來源主機，也不能按時間對齊特定連線。",
+            "B": "連線組合及時間可將網路事件連至相符端點連線遙測。",
+            "C": "負責人資訊識別責任，並不識別發起此連線的主機與工作階段。",
+            "D": "密碼政策描述驗證要求，並非此對外連線的證據。"
+          },
+          "competency": "考綱 4.9"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 4.9",
+          "accessed": "2026-10-07"
+        },
+        {
+          "title": "NIST SP 800-86 — Integrating Forensic Techniques into Incident Response",
+          "url": "https://csrc.nist.gov/pubs/sp/800/86/final",
+          "section": "Data collection, integrity, and evidence handling",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "type": "情境複選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 1,
+      "objective": "1.1",
+      "category": "1. General Security Concepts",
+      "chapter": "1.1",
+      "competency": "Objective 1.1",
+      "question_text": "A store uses a door alarm and a board-approved access policy. Which TWO control categories are represented by those two measures? Select two.",
+      "options": {
+        "A": "A door alarm",
+        "B": "An acceptable-use policy",
+        "C": "A firewall ACL",
+        "D": "A database trigger"
+      },
+      "answer": "AB",
+      "explanation": "It is a physical control that detects entry conditions. It is a managerial control defining required behavior.",
+      "option_explanations": {
+        "A": "It is a physical control that detects entry conditions.",
+        "B": "It is a managerial control defining required behavior.",
+        "C": "It is a technical network control.",
+        "D": "It is a technical application control."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "商店使用門禁警報與董事會核准的存取政策。這兩種措施代表哪些控制類別？選兩項。",
+          "options": {
+            "A": "門禁警報",
+            "B": "可接受使用政策",
+            "C": "防火牆 ACL",
+            "D": "資料庫 trigger"
+          },
+          "explanation": "它是偵測進入狀態的實體控制。 它是定義行為要求的管理控制。",
+          "option_explanations": {
+            "A": "它是偵測進入狀態的實體控制。",
+            "B": "它是定義行為要求的管理控制。",
+            "C": "它是技術網路控制。",
+            "D": "它是技術應用控制。"
+          },
+          "competency": "考綱 1.1"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 1.1",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 1,
+      "objective": "1.2",
+      "category": "1. General Security Concepts",
+      "chapter": "1.2",
+      "competency": "Objective 1.2",
+      "question_text": "A backup is readable only by authorized staff but contains a tampered record. Which CIA property remains protected and which is lost?",
+      "options": {
+        "A": "Availability remains; confidentiality is lost",
+        "B": "Integrity remains; availability is lost",
+        "C": "Non-repudiation remains; safety is lost",
+        "D": "Confidentiality remains; integrity is lost"
+      },
+      "answer": "D",
+      "explanation": "Access remains restricted while content trust is broken.",
+      "option_explanations": {
+        "A": "No unauthorized disclosure is described.",
+        "B": "The record was changed, and the backup remains readable.",
+        "C": "These are not the CIA properties at issue.",
+        "D": "Access remains restricted while content trust is broken."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "備份只有授權員工可讀，但其中一筆記錄遭竄改。哪項 CIA 屬性仍受保護，哪項遺失？",
+          "options": {
+            "A": "可用性仍在；機密性遺失",
+            "B": "完整性仍在；可用性遺失",
+            "C": "不可否認性仍在；安全性遺失",
+            "D": "機密性仍在；完整性遺失"
+          },
+          "explanation": "存取仍受限，但內容可信度被破壞。",
+          "option_explanations": {
+            "A": "題目沒有描述未授權揭露。",
+            "B": "記錄被修改，而備份仍可讀。",
+            "C": "這些不是題目涉及的 CIA 屬性。",
+            "D": "存取仍受限，但內容可信度被破壞。"
+          },
+          "competency": "考綱 1.2"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 1.2",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 2,
+      "objective": "2.2",
+      "category": "2. Threats, Vulnerabilities, and Mitigations",
+      "chapter": "2.2",
+      "competency": "Objective 2.2",
+      "question_text": "An employee receives a voice message directing her to disclose a one-time password to “IT.” Which vector is this?",
+      "options": {
+        "A": "Watering hole",
+        "B": "Typosquatting",
+        "C": "Vishing",
+        "D": "Smishing"
+      },
+      "answer": "C",
+      "explanation": "Voice-based phishing is vishing.",
+      "option_explanations": {
+        "A": "A watering hole compromises a site visited by targets.",
+        "B": "Typosquatting uses look-alike domain names.",
+        "C": "Voice-based phishing is vishing.",
+        "D": "Smishing uses text messages."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "員工收到語音訊息，要求將一次性密碼提供給「IT」。這是哪種攻擊途徑？",
+          "options": {
+            "A": "Watering hole",
+            "B": "Typosquatting",
+            "C": "Vishing",
+            "D": "Smishing"
+          },
+          "explanation": "以語音進行的 phishing 是 vishing。",
+          "option_explanations": {
+            "A": "watering hole 會入侵目標常訪網站。",
+            "B": "typosquatting 使用相似網域名稱。",
+            "C": "以語音進行的 phishing 是 vishing。",
+            "D": "Smishing 使用文字訊息。"
+          },
+          "competency": "考綱 2.2"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 2.2",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 2,
+      "objective": "2.3",
+      "category": "2. Threats, Vulnerabilities, and Mitigations",
+      "chapter": "2.3",
+      "competency": "Objective 2.3",
+      "question_text": "A process accepts a filename and executes it with shell metacharacters intact. Which vulnerability should be addressed first?",
+      "options": {
+        "A": "Data remanence",
+        "B": "Command injection",
+        "C": "TOCTOU",
+        "D": "Buffer overflow"
+      },
+      "answer": "B",
+      "explanation": "Untrusted input can alter the command interpreted by the shell.",
+      "option_explanations": {
+        "A": "The issue is command interpretation, not residual media data.",
+        "B": "Untrusted input can alter the command interpreted by the shell.",
+        "C": "No check-and-use race is described.",
+        "D": "No memory-boundary overwrite is described."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "程序接受檔名並保留 shell metacharacters 後執行。應首先處理哪種弱點？",
+          "options": {
+            "A": "Data remanence",
+            "B": "Command injection",
+            "C": "TOCTOU",
+            "D": "Buffer overflow"
+          },
+          "explanation": "不可信輸入可能改變 shell 解讀的命令。",
+          "option_explanations": {
+            "A": "問題是命令解讀而非媒體殘留資料。",
+            "B": "不可信輸入可能改變 shell 解讀的命令。",
+            "C": "沒有描述檢查與使用之間的競態。",
+            "D": "沒有描述記憶體邊界覆寫。"
+          },
+          "competency": "考綱 2.3"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 2.3",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 2,
+      "objective": "2.4",
+      "category": "2. Threats, Vulnerabilities, and Mitigations",
+      "chapter": "2.4",
+      "competency": "Objective 2.4",
+      "question_text": "A web account receives reset requests from many countries, followed by a successful reset from one address. Which log evidence should be correlated FIRST?",
+      "options": {
+        "A": "Identity, source IP, timestamp, and reset result",
+        "B": "DNS query logs for the reset service",
+        "C": "Endpoint process creation logs",
+        "D": "Asset purchase invoices"
+      },
+      "answer": "A",
+      "explanation": "These fields reveal the distributed reset pattern and successful event.",
+      "option_explanations": {
+        "A": "These fields reveal the distributed reset pattern and successful event.",
+        "B": "DNS may provide context but does not establish account-reset results.",
+        "C": "Process logs can show the client activity behind a reset request but are secondary to identity records.",
+        "D": "Invoices do not provide authentication evidence."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "Web 帳號收到多國密碼重設要求，之後某位址成功重設。應首先關聯哪項記錄證據？",
+          "options": {
+            "A": "身分、來源 IP、時間戳與重設結果",
+            "B": "重設服務的 DNS 查詢 logs",
+            "C": "端點程序建立記錄",
+            "D": "資產採購發票"
+          },
+          "explanation": "這些欄位可揭示分散重設模式與成功事件。",
+          "option_explanations": {
+            "A": "這些欄位可揭示分散重設模式與成功事件。",
+            "B": "DNS 可提供情境但不能建立帳號重設結果。",
+            "C": "程序記錄可顯示重設請求背後的用戶端活動，但次於身分記錄。",
+            "D": "發票不提供驗證證據。"
+          },
+          "competency": "考綱 2.4"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 2.4",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 2,
+      "objective": "2.5",
+      "category": "2. Threats, Vulnerabilities, and Mitigations",
+      "chapter": "2.5",
+      "competency": "Objective 2.5",
+      "question_text": "A public API has no rate limit and exposes a costly search endpoint. Which mitigation BEST reduces abuse without removing the business function?",
+      "options": {
+        "A": "Publish the endpoint URL in more documentation",
+        "B": "Disable all API logging",
+        "C": "Allow unlimited anonymous requests",
+        "D": "Require authentication and apply per-client rate limits"
+      },
+      "answer": "D",
+      "explanation": "Identity and throttling constrain abuse while preserving the API.",
+      "option_explanations": {
+        "A": "More exposure increases discovery.",
+        "B": "Removing logs reduces investigation capability.",
+        "C": "This preserves the abuse condition.",
+        "D": "Identity and throttling constrain abuse while preserving the API."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "公開 API 沒有 rate limit 且暴露高成本搜尋端點。哪項 mitigation 最能降低濫用而不移除業務功能？",
+          "options": {
+            "A": "在更多文件公布端點 URL",
+            "B": "停用所有 API 記錄",
+            "C": "允許無限匿名請求",
+            "D": "要求驗證並套用每個用戶端的 rate limit"
+          },
+          "explanation": "身分驗證與節流可限制濫用並保留 API。",
+          "option_explanations": {
+            "A": "更多暴露會增加被發現機會。",
+            "B": "移除記錄會降低調查能力。",
+            "C": "這會保留濫用條件。",
+            "D": "身分驗證與節流可限制濫用並保留 API。"
+          },
+          "competency": "考綱 2.5"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 2.5",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 3,
+      "objective": "3.1",
+      "category": "3. Security Architecture",
+      "chapter": "3.1",
+      "competency": "Objective 3.1",
+      "question_text": "A company places public web servers in a separate zone and keeps databases behind an internal firewall. Which architecture principle is demonstrated?",
+      "options": {
+        "A": "Shared administrative identity",
+        "B": "Unrestricted east-west traffic",
+        "C": "Network segmentation",
+        "D": "Single flat network"
+      },
+      "answer": "C",
+      "explanation": "Separate trust zones limit lateral movement.",
+      "option_explanations": {
+        "A": "Identity sharing is unrelated to zone separation.",
+        "B": "Unrestricted internal traffic defeats segmentation.",
+        "C": "Separate trust zones limit lateral movement.",
+        "D": "A flat network removes the described boundary."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "公司將公開 web server 放在分離區域，資料庫則在內部防火牆後。這展現哪個架構原則？",
+          "options": {
+            "A": "共用管理身分",
+            "B": "不受限 east-west 流量",
+            "C": "網路 segmentation",
+            "D": "單一平面網路"
+          },
+          "explanation": "分離信任區可限制橫向移動。",
+          "option_explanations": {
+            "A": "共用身分與區域分隔無關。",
+            "B": "不受限內部流量會破壞 segmentation。",
+            "C": "分離信任區可限制橫向移動。",
+            "D": "平面網路移除題述邊界。"
+          },
+          "competency": "考綱 3.1"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 3.1",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 3,
+      "objective": "3.2",
+      "category": "3. Security Architecture",
+      "chapter": "3.2",
+      "competency": "Objective 3.2",
+      "question_text": "A cloud database must accept traffic only from an application subnet and a monitored administrative jump host. Which rule is BEST?",
+      "options": {
+        "A": "Allow only the database hostname",
+        "B": "Allow only those sources and required database ports",
+        "C": "Allow the entire cloud VPC to every port",
+        "D": "Allow any Internet address with TLS"
+      },
+      "answer": "B",
+      "explanation": "The rule applies least privilege to source and service.",
+      "option_explanations": {
+        "A": "A name alone is not an access rule.",
+        "B": "The rule applies least privilege to source and service.",
+        "C": "This is broader than the requirement.",
+        "D": "Encryption does not limit who may connect."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "雲端資料庫只能接受應用程式子網路與受監控管理跳板機流量。哪項規則最適合？",
+          "options": {
+            "A": "只允許資料庫 hostname",
+            "B": "只允許這些來源與必要資料庫連接埠",
+            "C": "允許整個 cloud VPC 使用所有連接埠",
+            "D": "允許所有 Internet 位址搭配 TLS"
+          },
+          "explanation": "規則將最小權限套用到來源與服務。",
+          "option_explanations": {
+            "A": "名稱本身不是存取規則。",
+            "B": "規則將最小權限套用到來源與服務。",
+            "C": "這比需求更寬鬆。",
+            "D": "加密不會限制可連線者。"
+          },
+          "competency": "考綱 3.2"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 3.2",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 3,
+      "objective": "3.3",
+      "category": "3. Security Architecture",
+      "chapter": "3.3",
+      "competency": "Objective 3.3",
+      "question_text": "A legal team requires customer records to remain in one jurisdiction. Which data-control decision is FIRST?",
+      "options": {
+        "A": "Select storage and processing locations that satisfy sovereignty requirements",
+        "B": "Choose the region with the cheapest storage only",
+        "C": "Replicate records to every available region",
+        "D": "Remove the retention policy"
+      },
+      "answer": "A",
+      "explanation": "Location controls address legal jurisdiction before deployment.",
+      "option_explanations": {
+        "A": "Location controls address legal jurisdiction before deployment.",
+        "B": "Cost cannot override a legal location requirement.",
+        "C": "Global replication may violate the requirement.",
+        "D": "Retention does not select a lawful location."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "法務要求客戶記錄留在單一司法管轄區。首先應做哪項資料控制決策？",
+          "options": {
+            "A": "選擇符合 data sovereignty 的儲存與處理位置",
+            "B": "只選儲存最便宜的 region",
+            "C": "複製記錄到所有可用 region",
+            "D": "移除 retention policy"
+          },
+          "explanation": "位置控制在部署前處理司法管轄。",
+          "option_explanations": {
+            "A": "位置控制在部署前處理司法管轄。",
+            "B": "成本不能凌駕法律位置要求。",
+            "C": "全球複製可能違反要求。",
+            "D": "保留政策不會選擇合法位置。"
+          },
+          "competency": "考綱 3.3"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 3.3",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 3,
+      "objective": "3.4",
+      "category": "3. Security Architecture",
+      "chapter": "3.4",
+      "competency": "Objective 3.4",
+      "question_text": "A service must resume within 30 minutes and may lose at most five minutes of transactions. Which architecture targets should be documented?",
+      "options": {
+        "A": "RPO of 30 minutes and RTO of five minutes",
+        "B": "MTBF and asset value",
+        "C": "SLE and ALE",
+        "D": "RTO of 30 minutes and RPO of five minutes"
+      },
+      "answer": "D",
+      "explanation": "RTO limits restoration time; RPO limits data loss.",
+      "option_explanations": {
+        "A": "The two objectives are reversed.",
+        "B": "These do not express recovery targets.",
+        "C": "These are risk-loss metrics, not recovery objectives.",
+        "D": "RTO limits restoration time; RPO limits data loss."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "服務必須在 30 分鐘內復原，且最多遺失五分鐘交易。應記錄哪些架構目標？",
+          "options": {
+            "A": "RPO 30 分鐘與 RTO 五分鐘",
+            "B": "MTBF 與資產價值",
+            "C": "SLE 與 ALE",
+            "D": "RTO 30 分鐘與 RPO 五分鐘"
+          },
+          "explanation": "RTO 限制復原時間；RPO 限制資料遺失。",
+          "option_explanations": {
+            "A": "兩項目標順序相反。",
+            "B": "這些不表示復原目標。",
+            "C": "這些是風險損失指標，不是復原目標。",
+            "D": "RTO 限制復原時間；RPO 限制資料遺失。"
+          },
+          "competency": "考綱 3.4"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 3.4",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "type": "情境複選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 3,
+      "objective": "3.4",
+      "category": "3. Security Architecture",
+      "chapter": "3.4",
+      "competency": "Objective 3.4",
+      "question_text": "A ransomware event destroys the primary site. Which TWO resilience choices most improve recovery confidence?",
+      "options": {
+        "A": "Keep the only backup writable on the primary host",
+        "B": "Skip recovery testing to protect the backup",
+        "C": "Maintain an isolated immutable backup",
+        "D": "Exercise restoration against the documented RTO and RPO"
+      },
+      "answer": "CD",
+      "explanation": "Isolation and immutability prevent tampering from production. Testing demonstrates that targets are achievable.",
+      "option_explanations": {
+        "A": "A primary compromise can destroy it.",
+        "B": "Untested backups provide uncertain recovery.",
+        "C": "Isolation and immutability prevent tampering from production.",
+        "D": "Testing demonstrates that targets are achievable."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "勒索軟體事件破壞主要站點。哪兩種韌性措施最能提高復原把握？選兩項。",
+          "options": {
+            "A": "只在主站保留唯一可寫備份",
+            "B": "為保護備份而跳過復原測試",
+            "C": "維持隔離的 immutable backup",
+            "D": "依文件化 RTO 與 RPO 演練復原"
+          },
+          "explanation": "隔離與不可變性可防止正式環境竄改。 測試可證明目標能達成。",
+          "option_explanations": {
+            "A": "主站遭入侵時可一併破壞。",
+            "B": "未測試備份的復原能力不確定。",
+            "C": "隔離與不可變性可防止正式環境竄改。",
+            "D": "測試可證明目標能達成。"
+          },
+          "competency": "考綱 3.4"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 3.4",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 4,
+      "objective": "4.2",
+      "category": "4. Security Operations",
+      "chapter": "4.2",
+      "competency": "Objective 4.2",
+      "question_text": "An inventory shows an unowned cloud storage bucket containing regulated data. Which FIRST asset-management action is appropriate?",
+      "options": {
+        "A": "Ignore it until the next annual inventory",
+        "B": "Assign an accountable owner and classify the data before changing access",
+        "C": "Delete the bucket without preserving business context",
+        "D": "Make the bucket public to find its owner"
+      },
+      "answer": "B",
+      "explanation": "Ownership and classification establish accountability and handling needs.",
+      "option_explanations": {
+        "A": "The regulated data is an immediate governance issue.",
+        "B": "Ownership and classification establish accountability and handling needs.",
+        "C": "Deletion may destroy required data and evidence.",
+        "D": "Public exposure increases the incident."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "清冊顯示一個無負責人的雲端儲存桶含受規範資料。首先應採取哪項資產管理行動？",
+          "options": {
+            "A": "忽略直到下一年度清冊",
+            "B": "指定負責負責人並在修改存取前分類資料",
+            "C": "不保留業務情境就刪除儲存桶",
+            "D": "公開儲存桶以找出負責人"
+          },
+          "explanation": "負責人與分類建立責任及處理需求。",
+          "option_explanations": {
+            "A": "受規範資料是立即的治理問題。",
+            "B": "負責人與分類建立責任及處理需求。",
+            "C": "刪除可能破壞必要資料與證據。",
+            "D": "公開暴露會擴大事件。"
+          },
+          "competency": "考綱 4.2"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 4.2",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 5,
+      "objective": "5.2",
+      "category": "5. Security Program Management and Oversight",
+      "chapter": "5.2",
+      "competency": "Objective 5.2",
+      "question_text": "A risk register lists a high residual risk with no treatment owner. Which FIRST governance action is needed?",
+      "options": {
+        "A": "Assign an accountable owner and treatment decision",
+        "B": "Remove the risk from the register",
+        "C": "Set every risk to low",
+        "D": "Wait for an incident before assigning responsibility"
+      },
+      "answer": "A",
+      "explanation": "Ownership makes treatment and acceptance accountable.",
+      "option_explanations": {
+        "A": "Ownership makes treatment and acceptance accountable.",
+        "B": "Deletion hides rather than treats the risk.",
+        "C": "Changing labels does not change exposure.",
+        "D": "Governance should precede an incident."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "風險登錄列出高 residual risk 卻沒有處理負責人。首先需要哪項治理行動？",
+          "options": {
+            "A": "指定負責負責人與處理決策",
+            "B": "從登錄移除風險",
+            "C": "將所有風險設為 low",
+            "D": "等到事件後才分配責任"
+          },
+          "explanation": "負責人使處理與接受決策具責任。",
+          "option_explanations": {
+            "A": "負責人使處理與接受決策具責任。",
+            "B": "刪除只會隱藏而非處理風險。",
+            "C": "改標籤不會改變暴露。",
+            "D": "治理應在事件前完成。"
+          },
+          "competency": "考綱 5.2"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 5.2",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "type": "情境複選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 5,
+      "objective": "5.3",
+      "category": "5. Security Program Management and Oversight",
+      "chapter": "5.3",
+      "competency": "Objective 5.3",
+      "question_text": "A vendor will process regulated data and subcontract hosting. The customer needs enforceable exit handling and notice of security incidents. Which TWO contract terms meet those needs? Select two.",
+      "options": {
+        "A": "Data return or secure deletion at contract exit",
+        "B": "A service-credit schedule for availability failures only",
+        "C": "An unlimited right to change scope without notice",
+        "D": "A defined security-incident notification deadline and evidence obligation"
+      },
+      "answer": "AD",
+      "explanation": "Exit terms reduce exposure after service termination. A defined notification term lets the customer coordinate response and meet its reporting requirements.",
+      "option_explanations": {
+        "A": "Exit terms reduce exposure after service termination.",
+        "B": "Availability credits do not establish data handling at exit or a security-incident notification obligation.",
+        "C": "Uncontrolled scope changes increase third-party risk.",
+        "D": "A defined notification term lets the customer coordinate response and meet its reporting requirements."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "供應商將處理受管制資料並分包託管；客戶需要可執行的退出資料處理與安全事件通知。哪兩種合約條款符合需要？選兩項。",
+          "options": {
+            "A": "合約結束時返還或安全刪除資料",
+            "B": "僅針對可用性故障的服務抵扣表",
+            "C": "可不通知而無限變更範圍",
+            "D": "明定安全事件通知期限與證據義務"
+          },
+          "explanation": "退出條款降低服務終止後的暴露。 明確通知條件讓客戶協調回應並履行通報要求。",
+          "option_explanations": {
+            "A": "退出條款降低服務終止後的暴露。",
+            "B": "可用性抵扣不建立退出資料處理或安全事件通知義務。",
+            "C": "不受控範圍變更會增加第三方風險。",
+            "D": "明確通知條件讓客戶協調回應並履行通報要求。"
+          },
+          "competency": "考綱 5.3"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 5.3",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "type": "情境複選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 5,
+      "objective": "5.4",
+      "category": "5. Security Program Management and Oversight",
+      "chapter": "5.4",
+      "competency": "Objective 5.4",
+      "question_text": "An auditor asks why a retention exception preserved investigation data. Which TWO records best support the decision?",
+      "options": {
+        "A": "An unrelated application-performance report",
+        "B": "A user’s informal chat with no approval",
+        "C": "The approved legal hold and responsible owner",
+        "D": "The retention rule and documented exception reason"
+      },
+      "answer": "CD",
+      "explanation": "The hold and owner show authority, scope, and accountability. The rule and exception explain why routine deletion was suspended.",
+      "option_explanations": {
+        "A": "Performance data does not establish authority to suspend disposal of investigation records.",
+        "B": "An informal message lacks authoritative approval.",
+        "C": "The hold and owner show authority, scope, and accountability.",
+        "D": "The rule and exception explain why routine deletion was suspended."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "稽核員要求說明為何保存期限例外保留調查資料。哪兩種紀錄最能支持此決策？選兩項。",
+          "options": {
+            "A": "無關應用程式效能報告",
+            "B": "沒有核准的使用者閒聊",
+            "C": "核准的 legal hold 與負責負責人",
+            "D": "retention 規則與文件化例外理由"
+          },
+          "explanation": "legal hold 與負責人呈現授權、範圍與責任。 規則與例外說明為何暫停正常刪除。",
+          "option_explanations": {
+            "A": "效能資料不建立暫停處置調查紀錄的權限。",
+            "B": "非正式訊息缺乏權威核准。",
+            "C": "legal hold 與負責人呈現授權、範圍與責任。",
+            "D": "規則與例外說明為何暫停正常刪除。"
+          },
+          "competency": "考綱 5.4"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 5.4",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 5,
+      "objective": "5.5",
+      "category": "5. Security Program Management and Oversight",
+      "chapter": "5.5",
+      "competency": "Objective 5.5",
+      "question_text": "A security team compares two audits: one tests control design at a point in time, and one tests operating effectiveness over six months. Which distinction is correct?",
+      "options": {
+        "A": "Neither can produce evidence for customers",
+        "B": "The second provides period evidence of operating effectiveness",
+        "C": "The first proves every future control operation",
+        "D": "Both are identical because all audits have the same scope"
+      },
+      "answer": "B",
+      "explanation": "Testing over six months evaluates whether controls operated consistently.",
+      "option_explanations": {
+        "A": "Independent reports can provide customer assurance.",
+        "B": "Testing over six months evaluates whether controls operated consistently.",
+        "C": "A point-in-time test cannot prove future performance.",
+        "D": "Audit scope and period can differ materially."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "安全團隊比較兩次稽核：一次測試單一時間點的控制設計，一次測試六個月的運作有效性。哪項區分正確？",
+          "options": {
+            "A": "兩者都不能提供客戶證據",
+            "B": "第二次提供期間內運作有效性的證據",
+            "C": "第一次證明未來每次控制運作",
+            "D": "兩者相同，因為所有稽核範圍都相同"
+          },
+          "explanation": "六個月測試評估控制是否持續運作。",
+          "option_explanations": {
+            "A": "獨立報告可提供客戶保證。",
+            "B": "六個月測試評估控制是否持續運作。",
+            "C": "單一時間點無法證明未來表現。",
+            "D": "稽核範圍與期間可有重大差異。"
+          },
+          "competency": "考綱 5.5"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 5.5",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 5,
+      "objective": "5.6",
+      "category": "5. Security Program Management and Oversight",
+      "chapter": "5.6",
+      "competency": "Objective 5.6",
+      "question_text": "A phishing exercise shows fewer clicks but more reports than the previous quarter. What is the best interpretation?",
+      "options": {
+        "A": "Recognition and reporting behavior improved",
+        "B": "Training failed because completion rate was not measured",
+        "C": "The exercise proves no real phishing can succeed",
+        "D": "More reports always mean more false positives"
+      },
+      "answer": "A",
+      "explanation": "The behavior metrics show better resistance and escalation.",
+      "option_explanations": {
+        "A": "The behavior metrics show better resistance and escalation.",
+        "B": "Completion is less direct than behavior for this question.",
+        "C": "A simulation cannot prove future immunity.",
+        "D": "Reporting volume alone does not establish false positives."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "釣魚演練顯示點擊比上一季少、通報比上一季多。最佳解讀是什麼？",
+          "options": {
+            "A": "辨識與通報行為改善",
+            "B": "因未量課程完成率所以訓練失敗",
+            "C": "演練證明真實 phishing 不可能成功",
+            "D": "更多通報必然代表更多 false positive"
+          },
+          "explanation": "行為指標顯示抵抗與升級通報改善。",
+          "option_explanations": {
+            "A": "行為指標顯示抵抗與升級通報改善。",
+            "B": "對本題而言完成率不如行為直接。",
+            "C": "演練不能證明未來絕對免疫。",
+            "D": "通報量本身不能證明 false positive。"
+          },
+          "competency": "考綱 5.6"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 5.6",
+          "accessed": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "type": "情境單選題",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "domain": 5,
+      "objective": "5.1",
+      "category": "5. Security Program Management and Oversight",
+      "chapter": "5.1",
+      "competency": "Objective 5.1",
+      "question_text": "A board-approved security policy assigns the CISO authority to approve exceptions. Which governance principle is demonstrated?",
+      "options": {
+        "A": "Uncontrolled risk acceptance by every user",
+        "B": "Permanent policy immutability",
+        "C": "A technical firewall rule",
+        "D": "Defined accountability and delegated authority"
+      },
+      "answer": "D",
+      "explanation": "The policy identifies who may make and own the decision.",
+      "option_explanations": {
+        "A": "Risk acceptance should belong to accountable roles.",
+        "B": "Governance policies require review as risk changes.",
+        "C": "A firewall rule does not establish governance authority.",
+        "D": "The policy identifies who may make and own the decision."
+      },
+      "translations": {
+        "zh-Hant": {
+          "question_text": "董事會核准的安全政策授予 CISO 核准例外的權限。這展現哪項治理原則？",
+          "options": {
+            "A": "每位使用者不受控地接受風險",
+            "B": "政策永久不可變更",
+            "C": "技術防火牆規則",
+            "D": "明確責任與授權"
+          },
+          "explanation": "政策指出誰可作決策並承擔責任。",
+          "option_explanations": {
+            "A": "風險接受應屬負責角色。",
+            "B": "治理政策需隨風險變化審查。",
+            "C": "防火牆規則不會建立治理權限。",
+            "D": "政策指出誰可作決策並承擔責任。"
+          },
+          "competency": "考綱 5.1"
+        }
+      },
+      "references": [
+        {
+          "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-security-sy0-701-exam-objectives-%286-0%29.pdf?sfvrsn=204179cc_6",
+          "title": "CompTIA Security+ SY0-701 Exam Objectives (Version 6.0)",
+          "section": "Objective 5.1",
+          "accessed": "2026-10-07"
+        }
+      ]
+    }
+  ]
+}
